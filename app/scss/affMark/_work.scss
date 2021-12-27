@@ -1,0 +1,91 @@
+.affMark_work_section {
+  padding: 100px 0px;
+  @media (max-width: 991px) {
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .header {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      letter-spacing: -4px;
+      @media (max-width: 991px) {
+        font-size: 64px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        10,
+        500,
+        btn-primary-color,
+        heading-primary-color,
+        124,
+        48,
+        4
+      );
+      text-transform: uppercase;
+      border: none;
+      transition: background-color 0.25s;
+      &:hover {
+        background-color: ObjRet($colors, btn-primary-color);
+        color: ObjRet($colors, heading-secondary-color);
+        border: 1px solid ObjRet($colors, heading-primary-color);
+      }
+    }
+  }
+  .main_text {
+    column-gap: 16px;
+    row-gap: 16px;
+    .boxes {
+      width: 425px;
+      height: 455px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      @media (max-width: 767px) {
+        height: 350px;
+      }
+      @media (max-width: 475px) {
+        width: 100%;
+        padding: 20px;
+      }
+      h1 {
+        @include defStyle(secondary-font, 47, 300, bg-secondary);
+        @media (max-width: 767px) {
+          font-size: 35px;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 16, 400, bg-secondary);
+        line-height: 24px;
+      }
+    }
+    .box_1 {
+      background: url("../images/affMark_work_img1.png"),
+        ObjRet($colors, heading-secondary-color);
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+    .box_2 {
+      background: url("../images/affMark_work_img2.png"),
+        ObjRet($colors, card-bg-primary);
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+    .box_3 {
+      background: url("../images/affMark_work_img3.png"),
+        ObjRet($colors, card-bg-secondary);
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+  }
+}

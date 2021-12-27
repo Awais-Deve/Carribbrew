@@ -1,0 +1,184 @@
+.impactUs_info_banner {
+  background-color: ObjRet($colors, heading-secondary-color);
+  padding: 76px 0;
+  @media(max-width:991px){
+      padding:55px 0;
+  }
+  @media(max-width:767px){
+      padding:30px 0;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, bg-secondary);
+      letter-spacing: -8px;
+      line-height: 80px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        letter-spacing: -6px;
+        line-height: 70px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 24, 400, bg-secondary);
+      line-height: 37px;
+      @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .images {
+    background: url("../images/about_sect4_bg3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: 1199px) {
+      background-size: contain;
+    }
+    @media (max-width: 991px) {
+      height: 344px;
+    }
+    @media(max-width:767px){
+        height: unset;
+    }
+    .imgs_inner {
+      position: relative;
+      height: 481px;
+      @media (max-width: 1199px) {
+        height: 364px;
+      }
+      @media (max-width: 991px) {
+        width: 460px;
+      }
+      @media(max-width:767px){
+          width: 327px;
+          height: 255px;
+      }
+      .img1 {
+        position: absolute;
+        right: 0;
+        @media (max-width: 991px) {
+          right: unset;
+          left: 0;
+        }
+        .img1_inner {
+          width: 477px;
+          height: 414px;
+          position: relative;
+          @media (max-width: 1199px) {
+            width: 348px;
+            height: 303px;
+          }
+          @media (max-width: 767px) {
+            width: 258px;
+            height: 228px;
+          }
+          img {
+            width: 550px;
+            position: absolute;
+            top: -28px;
+            left: -46px;
+            @media (max-width: 1199px) {
+              width: 400px;
+              top: -19px;
+              left: -35px;
+            }
+            @media (max-width: 991px) {
+              top: -20px;
+              left: -33px;
+            }
+            @media (max-width: 767px) {
+              width: 300px;
+              top: -14px;
+              left: -26px;
+            }
+          }
+        }
+      }
+      .img2 {
+        position: absolute;
+        left: 121px;
+        bottom: -4px;
+        @media (max-width: 1399px) {
+          left: 24px;
+        }
+        @media (max-width: 1199px) {
+          left: 86px;
+          bottom: -6px;
+        }
+        @media (max-width: 991px) {
+          width: 173px;
+          height: 215px;
+          left: unset;
+          right: 10px;
+          bottom: 1px;
+        }
+        @media(max-width:767px){
+            width: unset;
+            height: unset;
+            right: 0;
+            bottom: 0;
+        }
+        .img2_inner {
+          position: relative;
+          width: 254px;
+          height: 312px;
+          @media (max-width: 1199px) {
+            width: 178px;
+            height: 217px;
+          }
+          @media(max-width:767px){
+            width: 118px;
+            height: 144px;
+          }
+          img {
+            width: 325px;
+            position: absolute;
+            top: -25px;
+            left: -46px;
+            @media (max-width: 1199px) {
+              width: 225px;
+              top: -18px;
+              left: -31px;
+            }
+            @media (max-width: 991px) {
+              top: -17px;
+              left: -32px;
+            }
+            @media (max-width: 767px) {
+              width: 150px;
+              top: -12px;
+              left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.impactUs_gallery{
+    padding-top: 120px;
+    @media(max-width:991px){
+        padding:55px 0;
+    }
+    @media(max-width: 767px){
+        padding: 30px 0;
+    }
+}
+.impactUs_info_three{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.impactUs_cards{
+    padding: 120px 0;
+    @media(max-width: 991px){
+        padding:55px 0;
+    }
+    @media(max-width: 767px){
+        padding:30px 0;
+    }
+}

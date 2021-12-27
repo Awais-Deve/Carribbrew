@@ -1,0 +1,42 @@
+.affMark_info_three{
+    padding-bottom: 120px;
+    @media(max-width:991px){
+        padding:30px 0px;
+    }
+    .main_text{
+        column-gap: 16px;
+        row-gap: 16px;
+        .boxes{
+            padding:55px 30px;
+            width: 428px;
+            @media(max-width:767px){
+                padding: 20px;
+            }
+            @media(max-width:475px){
+                width: 100%;
+            }
+            img{
+                @media(max-width:767px){
+                    width: 50px;
+                }
+            }
+            h1{
+                @include defStyle(secondary-font,47,300,bg-secondary);
+                line-height: 50px;
+                @media(max-width: 767px){
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .box_1{
+            background-color: ObjRet($colors,heading-secondary-color);
+        }
+        .box_2{
+            background-color: ObjRet($colors,card-bg-primary);
+        }
+        .box_3{
+            background-color: ObjRet($colors,card-bg-secondary);
+        }
+    }
+}

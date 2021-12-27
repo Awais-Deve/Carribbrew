@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <title>Product Coffe</title>
+  </head>
+  <body>
+    <header>
+      <!-- HEDER-BAR START -->
+      <div class="header_bar py-3 px-0">
+        <div class="">
+          <div class="text-center">
+            <p class="main-text align-items-center">
+              <span class="discount_head d-inline-block me-1 mb-lg-0 mb-2"
+                >Free Shipping on orders $75+
+              </span>
+              <span class="discount_detail"
+                >$5 Flat rate Shipping on orders $50+ (Buy 1 Get 1 at 10% off
+                for 24hrs when you use Code: WOMENPWR10)</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- HEDER-BAR END -->
+      <!-- NAVBAR START -->
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo.png" alt="caribbrew" />
+          </a>
+          <div class="nav_search_box d-lg-none d-block align-items-center">
+            <div class="nav_icons">
+              <a href="#" class="me-3"><img src="images/user.png" /></a>
+              <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            F
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Shop Now</a
+                >
+              </li>
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Sales Location</a>
+              </li>
+            </ul>
+            <div
+              class="
+                nav_search_box
+                d-flex
+                justify-content-lg-start justify-content-center
+              "
+            >
+              <div
+                class="
+                  nav_icons
+                  me-3
+                  d-lg-flex d-none
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <input type="text" class="px-1" id="search_inp" />
+                <a class="me-3" id="search_btn" onclick="search_toggle()"
+                  ><img src="images/search.png"
+                /></a>
+                <a href="#" class="me-3"><img src="images/user.png" /></a>
+                <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+              </div>
+              <a href="#"
+                ><button class="" type="submit">Subscription</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+    </header>
+    <!-- DETAIL SECTION START -->
+    <section class="detail_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-3">
+            <div class="product_images" id="productPage_images_nav">
+              <img src="images/product_main_img.png" alt="" />
+              <img src="images/product_galry_img2.png" alt="" />
+              <img src="images/product_galry_img3.png" alt="" />
+              <img src="images/product_galry_img4.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-9">
+            <div class="product_main_image" id="productPage_image">
+              <img src="images/product_main_img.png" alt="" />
+              <img src="images/product_galry_img2.png" alt="" />
+              <img src="images/product_galry_img3.png" alt="" />
+              <img src="images/product_galry_img4.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="
+              main_text
+              col-lg-6 col-12
+              mt-lg-0 mt-5
+              px-3
+              text-md-start text-center
+            "
+          >
+            <h1 class="mb-3">
+              Caribbean <br class="d-lg-inline-block d-none" />Spiced Coffee
+            </h1>
+            <p class="mb-1 saving">You’re saving: $3</p>
+            <div class="mb-4">
+              <span class="discounted_price me-1">$16.00</span
+              ><span class="price">$18.00</span>
+            </div>
+            <div class="rating_stars mb-2 mt-2">
+              <a href="#"><i class="rated fas fa-star"></i></a>
+              <a href="#"><i class="rated fas fa-star"></i></a>
+              <a href="#"><i class="rated fas fa-star"></i></a>
+              <a href="#"><i class="rated fas fa-star"></i></a>
+              <a href="#"><i class="non_rated fas fa-star"></i></a>
+            </div>
+            <p class="review mb-sm-5 mb-4">from 812 reviews</p>
+            <div class="links mb-4">
+              <a href="" class="me-xl-4 me-lg-3 me-sm-4 me-3"
+                ><img src="images/truck.png" alt="" /><span
+                  >Shipping Policy</span
+                ></a
+              >
+              <a href="" class="me-xl-4 me-lg-3 me-sm-4 me-3 ms-xl-2 ms-0"
+                ><img src="images/fire.png" alt="" /><span>Roast Level</span></a
+              >
+              <a
+                href=""
+                class="
+                  ms-xl-2 ms-lg-0 ms-sm-2 ms-0
+                  mt-xl-0 mt-lg-2 mt-sm-0 mt-2
+                "
+                ><img src="images/cup.png" alt="" /><span
+                  >Coffee Details</span
+                ></a
+              >
+            </div>
+            <div class="addToCart_bar mt-3 d-flex mb-5">
+              <div
+                class="
+                  product_count
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  me-3
+                "
+              >
+                <button>-</button>
+                <span class="mx-3">02</span>
+                <button>+</button>
+              </div>
+              <input type="submit" value="add to cart" />
+            </div>
+            <div class="subscribe_save mt-2 p-4 mb-4">
+              <h2 class="mb-3">Subscribe and save</h2>
+              <div class="mb-3">
+                <label>
+                    <div class="custom_radio_btn me-1">
+                      <span class="checkmark"></span>
+                    </div>
+                    <input class="me-1" type="radio" name="subscribtion" checked />
+                    <span class="me-sm-4 me-3">One Time Purchase</span>
+                </label>
+                <label>
+                  <div class="custom_radio_btn mx-1">
+                    <span class="checkmark"></span>
+                  </div>
+                  <input class="mx-1" type="radio" name="subscribtion"/>
+                  <span>Subscribe</span>
+                </label>
+              </div>
+              <input class="mt-2" type="submit" value="Buy Now" />
+            </div>
+            <div class="payOption_image mt-3 mb-5 text-center">
+              <h2 class="mb-3">Checkout Securely With:</h2>
+              <img class="mt-2" src="images/Mask Group-min.png" alt="" />
+            </div>
+            <div class="add_wishlist d-flex align-items-center mb-4 justify-content-lg-start justify-content-center">
+              <i class="fas fa-heart" class="me-2"></i>
+              <a href="" class="ms-1"><span>Add to wishlist</span></a>
+            </div>
+            <div class="range_bar mt-3 mb-5">
+              <h2 class="mb-2">Roast Level</h2>
+              <div class="range">
+                <div class="range_box">
+                  <div class="numbers d-flex justify-content-between px-1 mb-1">
+                    <span>0</span>
+                    <span>2</span>
+                    <span>4</span>
+                    <span>6</span>
+                    <span>8</span>
+                    <span>10</span>
+                  </div>
+                  <div class="range_line d-flex justify-content-between px-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="variations d-flex justify-content-between mt-2">
+                    <span>Lightest</span>
+                    <span>Light</span>
+                    <span class="active">Medium</span>
+                    <span>Dark</span>
+                    <span>Darkest</span>
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <input type="range" min="0" max="4" step="1" id="customRange">
+                </div>
+              </div>
+            </div>
+            <div class="extra_info">
+              <div class="collapse_btn_row">
+                <a class="tab1 collapse_btn active me-sm-4 me-2 me-lg-1 me-xl-3 text-center">
+                  Description
+                </a>
+                <a class="tab2 collapse_btn me-sm-4 me-2 me-lg-1 me-xl-3 text-center">
+                  How To Use
+                </a>
+                <a class="tab3 collapse_btn text-center">
+                  Ingredients
+                </a>
+              </div>
+                <div class="collapse_data1 data active">
+                  <div class="card card-body px-0 ">
+                    <p class="mb-4">
+                      This fusion of premium arabica coffee and exotic sweet
+                      spices from Haiti will transport you to the Caribbean! This
+                      blend beautifully balances the subtle complexity of our
+                      coffee with hints of freshly grounded Haitian cinnamon. It
+                      makes THE BEST COLD BREW!!! Drink it black, cold or hot,
+                      with or without milk. The options are limitless Ingredients:
+                    </p>
+                    <p class="mt-1">
+                      Haitian coffee, Haitian cinnamon, spices 12 oz (For easy to
+                      use and mess-free cold brew bags, check out this listing
+                      <a href="#"
+                        >https://caribbrew.com/products/coffee-bean-bag-hot-and-cold-brew)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse_data2 data">
+                  <div class="card card-body px-0">
+                    <p class="mb-4">
+                      This fusion of premium arabica coffee and exotic sweet
+                      spices from Haiti will transport you to the Caribbean! This
+                      blend beautifully balances the subtle complexity of our
+                      coffee with hints of freshly grounded Haitian cinnamon. It
+                      makes THE BEST COLD BREW!!! Drink it black, cold or hot,
+                      with or without milk. The options are limitless Ingredients:
+                    </p>
+                    <p class="mt-1">
+                      Haitian coffee, Haitian cinnamon, spices 12 oz (For easy to
+                      use and mess-free cold brew bags, check out this listing
+                      <a href="#"
+                        >https://caribbrew.com/products/coffee-bean-bag-hot-and-cold-brew)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse_data3 data">
+                  <div class="card card-body px-0">
+                    <p class="mb-4">
+                      This fusion of premium arabica coffee and exotic sweet
+                      spices from Haiti will transport you to the Caribbean! This
+                      blend beautifully balances the subtle complexity of our
+                      coffee with hints of freshly grounded Haitian cinnamon. It
+                      makes THE BEST COLD BREW!!! Drink it black, cold or hot,
+                      with or without milk. The options are limitless Ingredients:
+                    </p>
+                    <p class="mt-1">
+                      Haitian coffee, Haitian cinnamon, spices 12 oz (For easy to
+                      use and mess-free cold brew bags, check out this listing
+                      <a href="#"
+                        >https://caribbrew.com/products/coffee-bean-bag-hot-and-cold-brew)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="extra_info_two mb-5">
+              <div class="accordion_item tab tab1 d-flex justify-content-between py-4 active" >
+                <span>Formula Facts</span>
+                 <span class="icon">+</span>
+              </div>
+              <div class="accordion_body px-0 collapse_data1">
+                <strong>How long does shipping take? </strong>
+                <p class="mb-4">
+                  Orders within the United States usually arrive between 3
+                  to 5 days. Please keep in mind that Federal Holidays and
+                  COVID-19 can cause delay the ETA.
+                </p>
+                <strong
+                  >Rush orders: Can I pay for next day shipping?</strong
+                >
+                <p class="mb-4">
+                  Yes, you can. You can pay for next day delivery, but
+                  please email us, so we make sure your order gets out
+                  asap.
+                </p>
+                <strong
+                  >Delayed shipping, wrong address, wrong order, and
+                  missing item</strong
+                >
+                <p class="mb-4">
+                  Please contact us if any of these occur. Our team will
+                  be more than happy to assist
+                </p>
+                <strong>Is the coffee organic?</strong>
+                <p class="mb-4">
+                  Although the coffee is grown organically, we are in the
+                  process of getting our USDA organic certification before
+                  we can make the claim
+                </p>
+              </div>
+              <div class="accordion_item tab tab2 d-flex justify-content-between py-4 active" >
+                <span>Formula Facts</span>
+                 <span class="icon">-</span>
+              </div>
+              <div class="accordion_body px-0 collapse_data2 active">
+                <strong>How long does shipping take? </strong>
+                <p class="mb-4">
+                  Orders within the United States usually arrive between 3
+                  to 5 days. Please keep in mind that Federal Holidays and
+                  COVID-19 can cause delay the ETA.
+                </p>
+                <strong
+                  >Rush orders: Can I pay for next day shipping?</strong
+                >
+                <p class="mb-4">
+                  Yes, you can. You can pay for next day delivery, but
+                  please email us, so we make sure your order gets out
+                  asap.
+                </p>
+                <strong
+                  >Delayed shipping, wrong address, wrong order, and
+                  missing item</strong
+                >
+                <p class="mb-4">
+                  Please contact us if any of these occur. Our team will
+                  be more than happy to assist
+                </p>
+                <strong>Is the coffee organic?</strong>
+                <p class="mb-4">
+                  Although the coffee is grown organically, we are in the
+                  process of getting our USDA organic certification before
+                  we can make the claim
+                </p>
+              </div>
+              <div class="accordion_item tab tab3 d-flex justify-content-between py-4 active " >
+                <span>Formula Facts</span>
+                 <span class="icon">+</span>
+              </div>
+              <div class="accordion_body px-0 collapse_data3">
+                <strong>How long does shipping take? </strong>
+                <p class="mb-4">
+                  Orders within the United States usually arrive between 3
+                  to 5 days. Please keep in mind that Federal Holidays and
+                  COVID-19 can cause delay the ETA.
+                </p>
+                <strong
+                  >Rush orders: Can I pay for next day shipping?</strong
+                >
+                <p class="mb-4">
+                  Yes, you can. You can pay for next day delivery, but
+                  please email us, so we make sure your order gets out
+                  asap.
+                </p>
+                <strong
+                  >Delayed shipping, wrong address, wrong order, and
+                  missing item</strong
+                >
+                <p class="mb-4">
+                  Please contact us if any of these occur. Our team will
+                  be more than happy to assist
+                </p>
+                <strong>Is the coffee organic?</strong>
+                <p class="mb-4">
+                  Although the coffee is grown organically, we are in the
+                  process of getting our USDA organic certification before
+                  we can make the claim
+                </p>
+              </div>
+            </div>
+            <div class="extra_info_three p-sm-4 p-3 mt-3 d-flex">
+              <div class="left_text p-sm-3 p-0 pe-0">
+                <strong class="mb-1">Location</strong>
+                <p class="mb-4">Thiotte, South East of Haiti</p>
+                <strong class="mt-3 mb-1">Producer</strong>
+                <p class="mb-2">5,000 small-scale coffee farmers</p>
+                <strong class="mb-1">Gender</strong>
+                <p class="mb-2">Approximately 40 percent are women</p>
+                <strong class="mb-1">Process</strong>
+                <p class="mb-3">Washed</p>
+                <strong class="mt-2 mb-1">Elevantion</strong>
+                <p class="mb-3">5200-6000 feet</p>
+                <strong class="mt-2 mb-1">Harvest</strong>
+                <p>September - February</p>
+              </div>
+              <div class="right_text p-sm-3 p-0 ps-0">
+                <strong class="mb-1">Type</strong>
+                <p class="mb-3">Arabica</p>
+                <strong class="mt-2 mb-1">Medium And Dark</strong>
+                <p class="mb-2">
+                  Tasting Notes: Low acidity, full bodied, tangy, nutty
+                </p>
+                <strong class="mb-1">Caribbean Spiced</strong>
+                <p class="mb-3">
+                  Tasting Notes: Low acidity, full bodied, sweet, liquorish
+                </p>
+                <strong class="mt-2 mb-1">Brew Method</strong>
+                <p>
+                  French press, pour over, cold brew grind it finer for espresso
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DETAIL SECTION END -->
+    <!-- MESSAGE SECTION START -->
+    <section class="msg_section about_third_section">
+      <div class="container">
+        <div class="row text-md-start text-center">
+          <div class="video col-lg-6 col-12 mb-lg-0 mb-4">
+            <div>
+              <img src="images/msg_img.png" alt="" />
+              <div
+                class="
+                  play_button
+                  msg_play_btn
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              main_text
+              col-lg-6 col-12
+              d-flex
+              justify-content-center
+              flex-column
+            "
+          >
+            <h1 class="mb-3">A Message From Our Founder</h1>
+            <p>
+              Check out this video, and get to know us. When you choose
+              Caribbrew, you can feel good about making a difference because you
+              really are!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MESSAGE SECTION END -->
+    <!-- BANNER START -->
+    <section class="product_banner_section">
+      <div class="container">
+        <div class="row text-md-start text-center align-items-center">
+          <div class="main_text col-lg-6 col-12 order-lg-1 order-2">
+            <h1 class="mb-md-0 mb-3">Each Purchase Makes a</h1>
+            <h1 class="mb-md-4 mb-3">Difference</h1>
+            <a href="#"
+              ><button class="mt-md-3 mt-0">JOIN THE MOVEMENT</button></a
+            >
+          </div>
+          <div class="images col-lg-6 col-12 order-lg-2 order-1 mb-lg-0 mb-4">
+            <div class="imgs_inner mx-md-0 mx-auto">
+              <div class="img1">
+                <div class="img1_inner overflow-hidden">
+                  <img src="images/product_banner_img2.png" alt="" />
+                </div>
+              </div>
+              <div class="img2">
+                <div class="img2_inner overflow-hidden">
+                  <img src="images/product_banner_img1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BANNER END -->
+    <!-- CUSTOMER REVIEWS START -->
+    <section class="product_customer_review customer_review_section">
+      <div class="container">
+        <div class="row">
+          <div class="main_text col-12 mb-xl-0 mb-md-4 mb-3 text-center text-md-start">
+            <h1 class="mb-lg-4 mb-0">Customer reviews</h1>
+          </div>
+          <div class="customer_reviews col-12">
+            <div class="cutomer_review_inner product_detail_slider" id='productPage_1'>
+              <div
+                class="review_box text-md-start text-center mb-lg-0 mb-4 p-3"
+              >
+                <img src="images/customer_review_img1.png" alt="" />
+                <p class="mb-lg-5 mb-3 mt-lg-4 mt-3">
+                  I am a huge fan of this coffee! I just made my second
+                  purchase. You can say you love a product all day but if you’re
+                  not buying it, you’re just making noise!
+                </p>
+                <div class="rating_stars mt-2 mb-2">
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="non_rated fas fa-star"></i></a>
+                </div>
+              </div>
+              <div
+                class="review_box text-md-start text-center mb-lg-0 mb-4 p-3"
+              >
+                <img src="images/customer_review_img1.png" alt="" />
+                <p class="mb-lg-5 mb-3 mt-lg-4 mt-3">
+                  I am a huge fan of this coffee! I just made my second
+                  purchase. You can say you love a product all day but if you’re
+                  not buying it, you’re just making noise!
+                </p>
+                <div class="rating_stars mt-2 mb-2">
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="non_rated fas fa-star"></i></a>
+                </div>
+              </div>
+              <div
+                class="review_box text-md-start text-center mb-lg-0 mb-4 p-3"
+              >
+                <img src="images/customer_review_img1.png" alt="" />
+                <p class="mb-lg-5 mb-3 mt-lg-4 mt-3">
+                  I am a huge fan of this coffee! I just made my second
+                  purchase. You can say you love a product all day but if you’re
+                  not buying it, you’re just making noise!
+                </p>
+                <div class="rating_stars mt-2 mb-2">
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="non_rated fas fa-star"></i></a>
+                </div>
+              </div>
+              <div
+                class="review_box text-md-start text-center mb-lg-0 mb-4 p-3"
+              >
+                <img src="images/customer_review_img1.png" alt="" />
+                <p class="mb-lg-5 mb-3 mt-lg-4 mt-3">
+                  I am a huge fan of this coffee! I just made my second
+                  purchase. You can say you love a product all day but if you’re
+                  not buying it, you’re just making noise!
+                </p>
+                <div class="rating_stars mt-2 mb-2">
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="non_rated fas fa-star"></i></a>
+                </div>
+              </div>
+              <div
+                class="review_box text-md-start text-center mb-lg-0 mb-4 p-3"
+              >
+                <img src="images/customer_review_img1.png" alt="" />
+                <p class="mb-lg-5 mb-3 mt-lg-4 mt-3">
+                  I am a huge fan of this coffee! I just made my second
+                  purchase. You can say you love a product all day but if you’re
+                  not buying it, you’re just making noise!
+                </p>
+                <div class="rating_stars mt-2 mb-2">
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="rated fas fa-star"></i></a>
+                  <a href="#"><i class="non_rated fas fa-star"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="slick_arrows text-lg-end text-center">
+              <div class="container">
+                <button class="prev me-3 mt-4" id='product_prev1'>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next" id="product_next1">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CUSTOMER REVIEWS END -->
+    <!-- RELATED PRODUCTS START  -->
+    <section class="product_related_section bundle_deal_section">
+      <div class="container">
+        <div class="row">
+          <div class="main_text col-12 mb-xl-0 mb-md-4 mb-0 text-center text-md-start">
+            <h1 class="mb-lg-4 mb-0">Related Products</h1>
+          </div>
+          <div class="products_list col-12" id='productPage_2'>
+            <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="slick_btn text-lg-end text-center">
+              <div class="container">
+                <button class="slick_control_prev me-3 mt-4" id='product_prev2'>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slick_control_next" id="product_next2">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RELATED PRODUCTS END -->
+    <!-- BRAND LOGOS START -->
+    <section class="brands_logo_section product_brand_log">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="main_text text-center mb-4">
+            <h1>As Seen In</h1>
+          </div>
+        </div>
+        <!-- *** Brand logo *** -->
+
+        <div class="brand_logo row">
+          <div class="d-flex align-itmes-center">
+            <img
+              src="./images/TEA & COFFEE LOGO-min.png"
+              alt="brand_logo"
+              width="404px"
+              height="80px"
+            />
+          </div>
+          <div class="d-flex align-itmes-center">
+            <img
+              src="./images/BEYONCE LOGO-min.png"
+              alt="brand_logo"
+              width="294px"
+              height="80px"
+            />
+          </div>
+          <div class="d-flex align-itmes-center">
+            <img
+              src="./images/ESSENCE LOGO-min.png"
+              alt="brand_logo"
+              width="239px"
+              height="80px"
+            />
+          </div>
+          <div class="d-flex align-itmes-center">
+            <img
+              src="./images/TARAJI LOGO-min.png"
+              alt="brand_logo"
+              width="346px"
+              height="80px"
+            />
+          </div>
+          <div class="d-flex align-itmes-center">
+            <img
+              src="./images/DAILY MOM LOGO-min.png"
+              alt="brand_logo"
+              width="346px"
+              height="80px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BRAND LOGOS END -->
+    <!-- NEWSLETTER SECTION START -->
+    <section class="newsletter_section product_newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="main_text co1-12 text-center">
+            <h1 class='mb-3'>Subscribe To Our Newsletter
+            </h1>
+            <p class='mt-1 mb-lg-5 mb-4'>Always stay up to date with our latest deals and news</p>
+            <form action="">
+              <input class="px-3 me-lg-3 me-0 mb-3 mb-lg-0" type="email" name="" id="" placeholder="Email">
+              <input class='ms-1' type="submit" value="subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="main-footer py-4">
+      <div class="container">
+        <div class="row">
+            <a href="#" class="col-md-3 col-12 d-flex justify-content-center align-items-center logo"><img src="images/logo.png" alt=""></a>
+            <ul class='col-md-6 col-12  d-flex  my-lg-0 my-3  justify-content-center'>
+              <li class='nav-item gx-0'><a href='#' class='nav-link px-lg-3 px-2'>Shop Now</a></li>
+              <li class='nav-item gx-0'><a href='#' class="nav-link px-lg-3 px-2">About us</a></li>
+              <li class="nav-item gx-0"><a href='#' class="nav-link px-lg-3 px-2">Sales Location</a></li>
+            </ul>
+            <div class="col-md-3 col-12  social_links d-flex justify-content-center align-items-center">
+              <a href='#'><i class="fab fa-youtube"></i></a>
+              <a href='#'><i class="fab fa-instagram"></i></a>
+              <a href='#'><i class="fab fa-twitter-square"></i></a>
+              <a href='#'><i class="fab fa-linkedin-in"></i></a>
+              <a href='#'><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer_bar text-center py-3">
+      <p></p>
+    </div>
+    <!-- FOOTER END -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/BigPicture.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

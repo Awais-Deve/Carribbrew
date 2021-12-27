@@ -1,0 +1,62 @@
+.subscription_banner {
+  .slider_wrapper {
+    height: 522px;
+    background: url("../images/subscription_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 767px) {
+      background-position: center right;
+      height: 500px;
+    }
+    .main_text {
+      h1 {
+        @include defStyle(secondary-font, 64, 700, heading-primary-color);
+        line-height: 61px;
+        @media(max-width: 767px){
+            font-size: 40px;
+            line-height: 35px;
+        }
+      }
+      h3 {
+        @include defStyle(secondary-font, 32, 400, para-primary-color);
+        line-height: 39px;
+        @media(max-width: 767px){
+            font-size: 25px !important;
+            line-height: 24px;
+        }
+      }
+      .btns {
+        button {
+          @include btnStyle(
+            secondary-font,
+            10,
+            500,
+            btn-primary-color,
+            heading-secondary-color,
+            94,
+            32,
+            4
+          );
+          text-transform: uppercase;
+          border: none;
+          transition: background-color 0.25s;
+          &:hover {
+            background-color: ObjRet($colors, btn-primary-color);
+            color: ObjRet($colors, heading-secondary-color);
+            border: 1px solid ObjRet($colors, heading-primary-color);
+          }
+        }
+        a:last-child button {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+          border: 1px solid ObjRet($colors, heading-primary-color);
+          &:hover {
+            background-color: ObjRet($colors, heading-secondary-color);
+            color: ObjRet($colors, btn-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

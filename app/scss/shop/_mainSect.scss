@@ -1,0 +1,19 @@
+.shop_main_section{
+    padding-bottom: 0;
+    background: url('../images/shop_bg1.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 970px;
+    @media(max-width:991px){
+        background-size: 100% 16.5%;
+    }
+    @media(max-width: 767px){
+        background-size: 100% 18%;
+    }
+    .slick-list.draggable{
+        padding-left: 20px;
+        @media(max-width: 1199px){
+            padding-left: 0;
+        }
+    }
+}

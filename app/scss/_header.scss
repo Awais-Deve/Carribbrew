@@ -1,0 +1,118 @@
+header {
+  .header_bar {
+    background-color: ObjRet($colors, bg-primary);
+    .main-text {
+      .discount_head {
+        @include defStyle(primary-font, 14, 700, heading-primary-color);
+        letter-spacing: PxToRem(2);
+        text-transform: uppercase;
+      }
+      .discount_detail {
+        @include defStyle(primary-font, 12, 400, heading-primary-color);
+        @media (max-width: 991px) {
+          display: block;
+          line-height: PxToRem(18);
+        }
+      }
+    }
+  }
+  nav {
+    z-index: 5;
+
+    box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.1);
+    .navbar-brand img {
+      width: PxToRem(155);
+    }
+    ul {
+      .nav-item {
+        a {
+          @include defStyle(primary-font, 14, 300, para-primary-color);
+          &:hover {
+            color: ObjRet($colors, heading-primary-color) !important;
+          }
+        }
+      }
+    }
+    .nav_search_box {
+      .nav_icons {
+        position: relative;
+        #search_btn {
+          cursor: pointer;
+        }
+        a {
+          z-index: 2;
+        }
+      }
+      button {
+        @include btnStyle(
+          secondary-font,
+          14,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          115,
+          40,
+          4
+        );
+        transition: background-color 0.25s;
+        border: none;
+        &:hover {
+          background-color: transparent;
+          border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+          color: ObjRet($colors, heading-primary-color);
+        }
+      }
+    }
+    .navbar-toggler {
+      box-shadow: none !important;
+    }
+  }
+}
+.search_inp_div {
+  position: relative;
+  #search_inp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0px, -100%);
+    transition: transform 0.25s, opacity 0.15s;
+    z-index: 2;
+    opacity: 0;
+    .inner {
+      position: relative;
+      button {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        border:none;
+        background:transparent;
+        padding: 0;
+        img {
+          width: 15px;
+        }
+      }
+    }
+    input {
+      @include btnStyle(
+        secondary-font,
+        10,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        246,
+        40,
+        4
+      );
+      display: block;
+      text-transform: capitalize;
+      border: 1px solid ObjRet($colors, heading-primary-color);
+      box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+      padding-right: 30px !important;
+      letter-spacing:1px;
+      outline: none;  
+      &::placeholder {
+        color: ObjRet($colors, heading-secondary-color);
+      }
+    }
+  }
+}

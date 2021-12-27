@@ -1,0 +1,69 @@
+.pageNotFound_section {
+    padding:80px 0px;
+    background: url('../images/404_bg1.png'),url('../images/404_bg2.png');
+    background-position-x: right , 5%;
+    background-position-y: top , 80%;
+    background-repeat: no-repeat; 
+    @media(max-width:991px){
+        background-position-x: right , left;
+        background-size: 20%,20%;
+        padding:55px 0px;
+    }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 191, 300, rgba(86, 86, 86, 1));
+      background: -webkit-linear-gradient(90deg, rgba(86,86,86,0.1513620448179272) 20%, rgba(86,86,86,1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media(max-width:1399px){
+          font-size: 150px;
+      }
+      @media(max-width:991px){
+          font-size: 84px;
+      }
+    }
+    h2 {
+      @include defStyle(secondary-font, 100, 500, heading-primary-color);
+      @media(max-width:1399px){
+        font-size: 80px;
+      }
+      @media(max-width:991px){
+        font-size: 50px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 40, 300, para-fourth-color);
+      line-height: 32px;
+      @media(max-width:1399px){
+        font-size: 35px;
+      }
+      @media(max-width:991px){
+        font-size: 25px;
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        10,
+        500,
+        btn-primary-color,
+        heading-primary-color,
+        155,
+        48,
+        4
+      );
+      text-transform: uppercase;
+      border: none;
+      transition: background-color .25s;
+      &:hover{
+          background-color: ObjRet($colors,btn-primary-color);
+          color: ObjRet($colors,heading-secondary-color);
+          border: 1px solid ObjRet($colors,heading-primary-color);
+      }
+      @media(max-width:991px){
+        height: 40px;
+      }
+    }
+  }
+}

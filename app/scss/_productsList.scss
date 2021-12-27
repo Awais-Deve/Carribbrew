@@ -1,0 +1,125 @@
+.products_list_section {
+  padding-top:105px;
+  background: url("../images/product_list_bg.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 991px) {
+    padding: 55px 0;
+  }
+  @media (max-width: 767px) {
+    padding: PxToRem(30) 0;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      letter-spacing: PxToRem(-8);
+      line-height: 80px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: -6px;
+      }
+      @media (max-width: 767px) {
+        font-size: PxToRem(40);
+        letter-spacing: PxToRem(-2);
+        line-height: 40px;
+      }
+    }
+  }
+  .products_list {
+    row-gap: PxToRem(20);
+  }
+  .product_box {
+    .product_box_inner {
+      position: relative;
+      overflow: hidden;
+      width: PxToRem(268);
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0 PxToRem(8) PxToRem(30) rgba(0, 0, 0, 0.089);
+      border-radius: 34px;
+      .ribbon {
+        @include defStyle(secondary-font, 12, 700, bg-secondary);
+        background-color: ObjRet($colors, product-primary-bg);
+        position: absolute;
+        width: 100%;
+        transform: rotate(45.5deg);
+        left: PxToRem(86);
+        top: PxToRem(35);
+      }
+      img {
+        width: PxToRem(146);
+      }
+      .title {
+        @include defStyle(secondary-font, 16, 400, para-primary-color);
+        line-height: PxToRem(24);
+      }
+      .price {
+        @include defStyle(secondary-font, 32, 500, heading-secondary-color);
+      }
+      .rating_stars {
+        svg {
+          font-size: PxToRem(14);
+        }
+        .rated {
+          color: ObjRet($colors, heading-secondary-color);
+        }
+        .non_rated {
+          color: ObjRet($colors, inp-brdr);
+        }
+      }
+      .first_btn button {
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          95,
+          32,
+          4
+        );
+        border: none;
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+        &:hover {
+          border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-primary-color);
+        }
+      }
+      .second_btn button {
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          heading-primary-color,
+          btn-primary-color,
+          110,
+          32,
+          4
+        );
+        border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+        &:hover {
+          border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+          background-color: ObjRet($colors, heading-primary-color);
+          color: ObjRet($colors, btn-primary-color);
+        }
+      }
+    }
+  }
+  .slick_arrows {
+    button {
+      width: PxToRem(45);
+      height: PxToRem(45);
+      background-color: rgba(235, 116, 29, 0.35);
+      border-radius: 50%;
+      border: none;
+      font-size: PxToRem(16);
+      color: ObjRet($colors, btn-primary-color);
+    }
+  }
+}

@@ -1,0 +1,376 @@
+.detail_section {
+  padding: 80px 0px;
+  @media (max-width: 991px) {
+    padding: 55px 0px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0px;
+  }
+  .product_images {
+    img {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+  }
+  .product_main_image {
+    img {
+      width: 100%;
+    }
+  }
+  .main_text {
+    padding-right: 120px;
+    @media (max-width: 1399px) {
+      padding-right: 0;
+    }
+    h1 {
+      @include defStyle(secondary-font, 72, 300, heading-secondary-color);
+      letter-spacing: -6px;
+      line-height: 68.9px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40.9px;
+      }
+    }
+    .saving {
+      @include defStyle(secondary-font, 20, 400, para-primary-color);
+      line-height: 19.14px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    .discounted_price {
+      @include defStyle(secondary-font, 48, 700, discount-price-color);
+      @media (max-width: 767px) {
+        font-size: 35px;
+      }
+    }
+    .price {
+      @include defStyle(secondary-font, 25, 300, sale-color);
+      text-decoration: line-through;
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+    .rating_stars {
+      svg {
+        font-size: 26px;
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+      }
+      .rated {
+        color: ObjRet($colors, heading-secondary-color);
+      }
+      .non_rated {
+        color: ObjRet($colors, inp-brdr);
+      }
+    }
+    .review {
+      @include defStyle(secondary-font, 16, 500, para-third-color);
+    }
+    .links {
+      a {
+        @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        display: inline-flex;
+        align-items: center;
+        column-gap: 3px;
+        text-decoration: none;
+        @media (max-width: 549px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .addToCart_bar {
+      .product_count {
+        width: 92px;
+        background-color: ObjRet($colors, bg-third);
+        button {
+          color: ObjRet($colors, para-fourth-color);
+          border: none;
+          background: transparent;
+        }
+        span {
+          @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        }
+      }
+      input {
+        flex: 60%;
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          416,
+          48,
+          4
+        );
+        border: none;
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+          border: 1px solid ObjRet($colors, heading-primary-color);
+        }
+        @media (max-width: 1399px) {
+          width: 100%;
+        }
+      }
+    }
+    .subscribe_save {
+      background-color: ObjRet($colors, bg-third);
+      h2 {
+        @include defStyle(secondary-font, 24, 400, heading-primary-color);
+      }
+      label {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span {
+          @include defStyle(secondary-font, 18, 400, para-fourth-color);
+          @media (max-width: 549px) {
+            font-size: 16px;
+          }
+        }
+        input[type="radio"] {
+          display: none;
+        }
+        .custom_radio_btn {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 14px;
+          height: 14px;
+          border: 1px solid ObjRet($colors, heading-primary-color);
+          border-radius: 50%;
+          .checkmark {
+            opacity: 0;
+            width: 6px;
+            height: 6px;
+            background: ObjRet($colors, heading-primary-color);
+            border-radius: 50%;
+            transition: opacity 0.25s;
+          }
+        }
+      }
+      input[type="submit"] {
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          476,
+          48,
+          4
+        );
+        border: none;
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+          border: 1px solid ObjRet($colors, heading-primary-color);
+        }
+        @media (max-width: 1199px) {
+          width: 100%;
+        }
+      }
+    }
+    .payOption_image {
+      h2 {
+        @include defStyle(secondary-font, 24, 500, heading-secondary-color);
+      }
+      img {
+        width: 360px;
+        @media (max-width: 549px) {
+          width: 100%;
+        }
+      }
+    }
+    .add_wishlist {
+      svg {
+        font-size: 26px;
+        color: ObjRet($colors, heading-primary-color);
+      }
+      a {
+        text-decoration: none;
+        span {
+          @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        }
+      }
+    }
+    .range_bar {
+      h2 {
+        @include defStyle(secondary-font, 24, 500, heading-primary-color);
+        line-height: 30.89px;
+      }
+      .range {
+        .range_box {
+          width: 525px;
+          height: 55px;
+          position: relative;
+          @media (max-width: 1199px) {
+            width: 100%;
+          }
+          .numbers {
+            border-radius: 4px;
+            span {
+              @include defStyle(secondary-font, 14, 400, para-fourth-color);
+            }
+          }
+          .range_line {
+            background: linear-gradient(
+              270deg,
+              rgba(237, 100, 1, 0.31) 0%,
+              #3f1a00 100%
+            );
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            border-radius: 4px;
+            width: 100%;
+            height: 16px;
+            span {
+              display: inline-block;
+              width: 3px;
+              height: 16px;
+              background: white;
+            }
+          }
+          .variations {
+            span {
+              @include defStyle(secondary-font, 14, 400, para-fourth-color);
+              &.active {
+                color: ObjRet($colors, heading-primary-color);
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        input[type="range"] {
+          width: 525px;
+          margin: 0 auto;
+          -webkit-appearance: none; /* Override default CSS styles */
+          appearance: none;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 28px;
+            height: 14px;
+            background: url("../images/range_logo.png");
+            background-repeat: no-repeat;
+            // background-size: contain;
+            cursor: pointer;
+          }
+          @media (max-width: 1199px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .extra_info {
+      .collapse_btn_row {
+        border-bottom: 1px solid ObjRet($colors, brdr-primary-color);
+        padding-bottom: 13px;
+        .collapse_btn {
+          @include defStyle(secondary-font, 24, 400, para-fourth-color);
+          text-decoration: none;
+          padding: 10px;
+          cursor: pointer;
+          &.active {
+            font-weight: 500;
+            border-bottom: 2px solid ObjRet($colors, heading-primary-color);
+          }
+          @media (max-width: 1199px) {
+            // padding: 5px;
+            font-size: 20px;
+          }
+          @media (max-width: 549px) {
+            font-size: 18px;
+            padding: 11px 3.8px;
+          }
+          @media (max-width: 391px) {
+            font-size: 15px;
+            padding: 11px 3px;
+          }
+          @media(max-width: 333px){
+            font-size: 12px; 
+          }
+        }
+      }
+      .card-body {
+        border-bottom: 1px solid ObjRet($colors, brdr-primary-color);
+        p {
+          @include defStyle(secondary-font, 16, 400, para-primary-color);
+          line-height: 24.99px;
+          a {
+            @extend p;
+            text-decoration: none;
+            transition: color 0.25s;
+            &:hover {
+              color: ObjRet($colors, heading-secondary-color);
+            }
+          }
+        }
+      }
+      .data{
+        display:none;
+        &.active{
+          display: block;
+        }
+      }
+    }
+    .extra_info_two {
+      .accordion_item {
+        @include defStyle(secondary-font, 24, 500, para-fourth-color);
+        border-bottom: 1px solid ObjRet($colors, brdr-primary-color);
+        background-color: transparent;
+        box-shadow: none;
+        cursor: pointer;
+        @media (max-width: 1199px) {
+          font-size: 20px;
+        }
+        @media (max-width: 549px) {
+          font-size: 18px;
+        }
+        span{
+          z-index:-1;
+        }
+      }
+      .accordion_body {
+        padding-top: 16px;
+        @include defStyle(secondary-font, 16, 400, para-primary-color);
+        line-height: 24.99px;
+        display:none;
+        strong {
+          font-weight: 500;
+        }
+        border-bottom: 1px solid ObjRet($colors, brdr-primary-color);
+        &.active{
+          display: block;
+        }
+      }
+    }
+    .extra_info_three {
+      background-color: ObjRet($colors, bg-third);
+      column-gap: 40px;
+      @media (max-width: 1199px) {
+        column-gap: 25px;
+      }
+      @media (max-width: 549px) {
+        column-gap: 15px;
+      }
+      strong {
+        @include defStyle(secondary-font, 16, 500, heading-secondary-color);
+        line-height: 15.31px;
+        display: inline-block;
+      }
+      p {
+        @include defStyle(secondary-font, 14, 400, para-primary-color);
+        line-height: 16.27px;
+      }
+    }
+  }
+}

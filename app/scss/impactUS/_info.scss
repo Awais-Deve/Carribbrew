@@ -1,0 +1,64 @@
+.impactUs_info_one {
+  padding-top: 120px;
+  padding-bottom: 195px;
+  @media (max-width: 991px) {
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .img_inner {
+    img {
+      width: 636px;
+      @media(max-width: 1399px){
+          width: 100%;
+      }
+      @media(max-width: 991px){
+          width: 500px;
+      }
+      @media(max-width: 767px){
+          width: 350px;
+      }
+      @media(max-width: 375px){
+          width: 100%;
+      }
+    }
+  }
+  .main_text {
+    padding-right: 36px;
+    @media(max-width:1399px){
+        padding-right: 12px;
+    }
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      letter-spacing: -8px;
+      line-height: 80px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        letter-spacing: -6px;
+        line-height: 70px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 14, 400, para-primary-color);
+      line-height: 26px;
+      @media (max-width: 767px) {
+        line-height: 24px;
+      }
+    }
+    h2 {
+      @include defStyle(secondary-font, 16, 500, para-primary-color);
+      line-height: 29px;
+      @media (max-width: 767px) {
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.chat_button{
+    display: none;
+    position:fixed;
+    right: 3%;
+    bottom: 10%;
+    button{
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border:none;
+        background-color: ObjRet($colors,heading-primary-color);
+    }
+}

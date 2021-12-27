@@ -1,0 +1,27 @@
+.scrub_banner {
+  height: 584px;
+  background: url("../images/scrub_banner_bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  @media (max-width: 767px) {
+    height: 500px;
+    // background-position: center left;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 64, 700, bg-secondary);
+      line-height: 62px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 32, 400, bg-secondary);
+      @media (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+  }
+}

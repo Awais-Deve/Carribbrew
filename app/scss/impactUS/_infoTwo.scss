@@ -1,0 +1,112 @@
+.impactUs_info_two {
+  padding-top: 295px;
+  padding-bottom: 120px;
+  @media(max-width: 991px){
+      padding:30px 0;
+  }
+  background: url("../images/impactUs_info2_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 77%;
+  .img_inner {
+    width: 540px;
+    @media (max-width: 1399px) {
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      width: 465px;
+      height: 358px;
+      position: relative;
+    }
+    @media (max-width: 767px) {
+      width: 324px;
+      height: 248px;
+    }
+    img {
+      width: 540px;
+      @media (max-width: 1399px) {
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        width: 500px;
+        position: absolute;
+        top: -6px;
+        left: -8px;
+      }
+      @media (max-width: 767px) {
+        width: 350px;
+      }
+    }
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 400, heading-secondary-color);
+      letter-spacing: -8px;
+      line-height: 80px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        letter-spacing: -6px;
+        line-height: 70px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+    h2 {
+      @include defStyle(secondary-font, 24, 400, icon-color);
+      line-height: 37px;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 400, icon-color);
+      line-height: 24px;
+    }
+  }
+  .text {
+      margin-top: 70px;
+    padding: 60px 46px;
+    background-color: ObjRet($colors, bg-secondary);
+    box-shadow: 10px 10px 74px rgba(0, 0, 0, 0.15);
+    @media(max-width:767px){
+        margin-top: 30px;
+        padding:40px;
+    }
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      line-height: 80px;
+      letter-spacing: -8px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: -6px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -2px;
+      }
+    }
+    h2 {
+      @include defStyle(secondary-font, 24, 500, para-primary-color);
+      line-height: 34px;
+      font-style: italic;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 32, 400, para-primary-color);
+      line-height: 40px;
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}

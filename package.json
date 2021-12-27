@@ -1,0 +1,21 @@
+{
+  "name": "caribbrew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Awais ali",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bigpicture": "^2.5.3",
+    "bootstrap": "^5.1.0",
+    "browser-sync": "^2.27.5",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "sass": "^1.38.1"
+  }
+}

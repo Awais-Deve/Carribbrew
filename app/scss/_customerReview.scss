@@ -1,0 +1,99 @@
+.customer_review_section {
+  padding-bottom: 147px;
+  @media (max-width: 991px) {
+    padding: PxToRem(55) 0;
+  }
+  @media (max-width: 767px) {
+    padding: PxToRem(30) 0;
+  }
+  .rating_stars {
+    .rated {
+      color: ObjRet($colors, heading-secondary-color);
+    }
+    .non_rated {
+      color: ObjRet($colors, inp-brdr);
+    }
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      line-height: PxToRem(80.39);
+      letter-spacing: PxToRem(-8);
+      @media (max-width: 1199px) {
+        font-size: PxToRem(60);
+        letter-spacing: PxToRem(-3);
+        line-height: PxToRem(65);
+      }
+      @media (max-width: 768px) {
+        font-size: PxToRem(40);
+        line-height: PxToRem(35);
+      }
+    }
+    .rating_stars {
+      svg {
+        font-size: PxToRem(29);
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 500, para-third-color);
+    }
+  }
+  .review_box {
+    display: inline-block;
+    background-color: ObjRet($colors, bg-secondary);
+    border-radius: PxToRem(32);
+    box-shadow: 0 PxToRem(5) PxToRem(20) rgba(0, 0, 0, 0.089);
+    margin-right: PxToRem(10);
+    &:last-child {
+      margin-bottom: 0 !important;
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+      @media (max-width: 575px) {
+        width: PxToRem(250) !important;
+      }
+      @media (max-width: 767px) {
+        margin: 0 auto;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 400, para-primary-color);
+      line-height: PxToRem(20.03);
+      font-style: italic;
+    }
+    .rating_stars {
+      svg {
+        font-size: PxToRem(16);
+      }
+    }
+  }
+  .slick-list {
+    padding: PxToRem(10);
+  }
+  .slick_arrows button {
+    width: PxToRem(45);
+    height: PxToRem(45);
+    background-color: rgba(235, 116, 29, 0.35) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 50%;
+    border: none;
+    font-size: PxToRem(16);
+    color: ObjRet($colors, btn-primary-color);
+  }
+}
+
+.home_review {
+  .review_box {
+    @media (min-width: 991px) {
+      width: 279px !important;
+      margin-right: 32px !important;
+    }
+    @media (min-width: 1799px) {
+      width: 15.7vw !important;
+    }
+    @media (min-width: 2200px) {
+      width: 14vw !important;
+    }
+  }
+}

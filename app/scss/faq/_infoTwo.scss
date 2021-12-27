@@ -1,0 +1,66 @@
+.faq_info_two {
+    padding-top: 205px;
+    padding-bottom: 150px;
+    background: url('../images/faq_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    @media(max-width:1600px){
+      background-size: contain;
+    }
+    @media(max-width:991px){
+        padding:55px 0;
+    }
+    @media(max-width:767px){
+        padding:30px 0;
+    }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 64, 300, heading-secondary-color);
+      letter-spacing: -3px;
+      line-height: 62px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 24, 400, para-primary-color);
+      line-height: 37.5px;
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        12,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        182,
+        48,
+        4
+      );
+      border:1px solid ObjRet($colors,heading-primary-color);
+      text-transform: uppercase;
+      box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+      transition: background-color .25s;
+      &:hover{
+          background-color: ObjRet($colors,heading-secondary-color);
+          color:ObjRet($colors,btn-primary-color);
+      }
+      @media(max-width: 767px){
+        font-size: 10px;
+      }
+    }
+  }
+}
+.faq_newsletter{
+    @media(max-width: 991px){
+        padding-top: 30px;
+        padding-bottom: 85px;
+    }
+    @media(max-width: 767px){
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}

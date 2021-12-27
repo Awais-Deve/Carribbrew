@@ -1,0 +1,42 @@
+.shop_banner_section {
+    margin-bottom: 40px;
+    @media(max-width:991px){
+        margin-bottom: 30px;
+    }
+  .slider_wrapper {
+    background: url("../images/shop_slide_bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 385px;
+    @media (max-width: 1399px) {
+      background-position: center right;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        opacity: 0.3;
+        z-index: -1;
+      }
+    }
+    .main_text {
+      h1 {
+        @include defStyle(secondary-font, 64, 700, heading-primary-color);
+        @media (max-width: 991px) {
+          text-shadow: 1px 2px white;
+        }
+        @media(max-width: 767px){
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

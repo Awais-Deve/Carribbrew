@@ -1,0 +1,187 @@
+.about_fourth_section {
+  padding-top: 150px;
+  padding-bottom: 303px;
+  background: url("../images/about_sect4_bg.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 991px) {
+    margin: 0;
+    padding: 30px 0;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      letter-spacing: -8px;
+      line-height: 80.39px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        letter-spacing: -6px;
+        line-height: 70px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -2px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 25, 400, para-fifth-color);
+      line-height: 39.05px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        20,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        268,
+        71,
+        4
+      );
+      border: 1px solid ObjRet($colors, heading-primary-color);
+      text-transform: uppercase;
+      transition: background-color 0.25s;
+      box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+      &:hover {
+        background-color: ObjRet($colors, heading-secondary-color);
+        color: ObjRet($colors, btn-primary-color);
+      }
+      @media (max-width: 991px) {
+        font-size: 12px;
+        width: 182px;
+      }
+      @media (max-width: 767px) {
+        font-size: 10px;
+        height: 48px;
+        width: 132px;
+      }
+    }
+  }
+  .images {
+    background: url("../images/about_sect4_bg3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    @media (max-width: 991px) {
+      background-position-x: 90px;
+    }
+    .imgs_inner {
+      position: relative;
+      height: 577px;
+      @media (max-width: 1199px) {
+        height: 416px;
+      }
+      @media (max-width: 991px) {
+        width: 460px;
+        height: 330px;
+      }
+      @media (max-width: 767px) {
+        width: 363px;
+        height: 281px;
+      }
+      @media(max-width:390px){
+        width: 335px;
+      }
+      .img1 {
+        position: absolute;
+        right: 0;
+        top: 92px;
+        @media (max-width: 991px) {
+          right: unset;
+          left: 0;
+          top: 0;
+        }
+        .img1_inner {
+          width: 405px;
+          height: 352px;
+          position: relative;
+          @media (max-width: 1199px) {
+            width: 305px;
+            height: 263px;
+          }
+          @media (max-width: 767px) {
+            width: 263px;
+            height: 228px;
+          }
+          img {
+            width: 403px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            @media (max-width: 1199px) {
+              width: 300px;
+              top: 1px;
+              left: 3px;
+            }
+            @media (max-width: 991px) {
+              top: 2px;
+              left: 2px;
+            }
+            @media (max-width: 767px) {
+              width: 260px;
+            }
+          }
+        }
+      }
+      .img2 {
+        position: absolute;
+        left: 25px;
+        bottom: 33px;
+        @media (max-width: 1399px) {
+          left: 24px;
+        }
+        @media (max-width: 1199px) {
+          left: 22px;
+          bottom: 0px;
+        }
+        @media (max-width: 991px) {
+          left: unset;
+          right: 34px;
+          bottom: 1px;
+        }
+        @media (max-width: 767px) {
+          right: 0;
+        }
+        .img2_inner {
+          position: relative;
+          width: 257px;
+          height: 328px;
+          @media (max-width: 1199px) {
+            width: 178px;
+            height: 225px;
+          }
+          @media (max-width: 767px) {
+            width: 157px;
+            height: 198px;
+          }
+          img {
+            width: 350px;
+            position: absolute;
+            top: -43px;
+            left: -47px;
+            @media (max-width: 1199px) {
+              width: 240px;
+              top: -29px;
+              left: -31px;
+            }
+            @media (max-width: 991px) {
+              top: -29px;
+              left: -32px;
+            }
+            @media (max-width: 767px) {
+              width: 210px;
+              top: -25px;
+              left: -26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

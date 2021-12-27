@@ -1,0 +1,73 @@
+.faq_page_title {
+  padding-top:140px;
+  padding-bottom: 80px;
+  @media(max-width:991px){
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  @media(max-width:767px){
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 64, 700, heading-primary-color);
+      line-height: 62px;
+      @media(max-width:767px){
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    h2 {
+      @include defStyle(secondary-font, 32, 400, para-primary-color);
+      line-height: 39px;
+      margin-bottom: 85px;
+      @media(max-width: 767px){
+        font-size: 25px;
+        line-height: unset;
+        margin-bottom: 40px;
+      }
+    }
+    .inp_field {
+      position: relative;
+      img {
+        position: absolute;
+        left:24px;
+        top:26px;
+        @media(max-width:991px){
+          top:20px;
+        }
+        @media(max-width: 540px){
+          top:15px;
+        }
+      }
+      input {
+        @include btnStyle(
+          secondary-font,
+          16,
+          400,
+          inp-plchold-color,
+          bg-secondary,
+          848,
+          72,
+          4
+        );
+        border:1px solid ObjRet($colors,inp-brdr);
+        padding:0 55px;
+        &:focus{
+            outline:none;
+            border-color: ObjRet($colors,heading-primary-color);
+        }
+        @media(max-width:991px){
+          width: 500px;
+          height: 60px;
+        }
+        @media(max-width:540px){
+          width: 350px;
+          height: 50px;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}

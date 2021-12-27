@@ -1,0 +1,77 @@
+.newsletter_section {
+  padding-bottom: PxToRem(120);
+  @media (max-width: 991px) {
+    padding-top: PxToRem(30);
+    padding-bottom: 85px;
+  }
+  @media (max-width: 767px) {
+    padding-top: PxToRem(30);
+    padding-bottom: 60px;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 56, 300, heading-secondary-color);
+      line-height: PxToRem(53);
+      letter-spacing: PxToRem(-5);
+      @media (max-width: 767px) {
+        font-size: PxToRem(40);
+        line-height: PxToRem(35);
+        letter-spacing: PxToRem(-2);
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 24, 400, para-fourth-color);
+      line-height: PxToRem(22);
+      @media (max-width: 767px) {
+        font-size: PxToRem(18);
+        line-height: 24px;
+      }
+    }
+    input[type="email"] {
+      @include btnStyle(
+        secondary-font,
+        16,
+        400,
+        inp-plchold-color,
+        btn-primary-color,
+        435,
+        48,
+        4
+      );
+      border: PxToRem(1) solid ObjRet($colors, inp-brdr);
+      outline: none;
+      &::placeholder {
+        color: ObjRet($colors, inp-plchold-color);
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    input[type="submit"] {
+      @include btnStyle(
+        secondary-font,
+        14,
+        500,
+        btn-primary-color,
+        heading-primary-color,
+        200,
+        48,
+        4
+      );
+      border: none;
+      transition: background-color 0.25s;
+      &:hover {
+        background-color: ObjRet($colors, btn-primary-color);
+        color: ObjRet($colors, heading-primary-color);
+        border: PxToRem(1) solid ObjRet($colors, heading-secondary-color);
+      }
+      @media (max-width: 991px) {
+        font-size: 12px;
+      }
+      @media (max-width: 767px) {
+        font-size: 10px;
+        width: 182px;
+      }
+    }
+  }
+}

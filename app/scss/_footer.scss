@@ -1,0 +1,87 @@
+.main-footer {
+  background-color: ObjRet($colors, footer-bg);
+  .logo img{
+    width: PxToRem(155);
+  }
+  ul {
+    .nav-item {
+      a {
+        @include defStyle(primary-font, 14, 300, para-primary-color);
+        &:hover {
+          color: ObjRet($colors, heading-primary-color) !important;
+        }
+      }
+    }
+  }
+  .social_links {
+    .circles{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .yt_cricle{
+      background-color: ObjRet($colors,yt-bg);
+      color:ObjRet($colors,bg-secondary);
+      transition: background-color .25s;
+      &:hover{
+        background-color: ObjRet($colors,bg-secondary);
+        color: ObjRet($colors,yt-bg);
+        border:2px solid ObjRet($colors,yt-bg);
+      }
+    }
+    .insta_circle{
+      background-color: ObjRet($colors,insta-bg);
+      color:ObjRet($colors,bg-secondary);
+      transition: background-color .25s;
+      &:hover{
+        background-color: ObjRet($colors,bg-secondary);
+        color: ObjRet($colors,insta-bg);
+        border:2px solid ObjRet($colors,insta-bg);
+      }
+    }
+    .twt_circle{
+      background-color: ObjRet($colors,twt-bg);
+      color:ObjRet($colors,bg-secondary);
+      transition: background-color .25s;
+      &:hover{
+        background-color: ObjRet($colors,bg-secondary);
+        color: ObjRet($colors,twt-bg);
+        border:2px solid ObjRet($colors,twt-bg);
+      }
+    }
+    .lkdn_circle{
+      background-color: ObjRet($colors,lkdn-bg);
+      color:ObjRet($colors,bg-secondary);
+      transition: background-color .25s;
+      &:hover{
+        background-color: ObjRet($colors,bg-secondary);
+        color: ObjRet($colors,lkdn-bg);
+        border:2px solid ObjRet($colors,lkdn-bg);
+      }
+    }
+    .fb_circle{
+      background-color: ObjRet($colors,fb-bg);
+      color:ObjRet($colors,bg-secondary);
+      transition: background-color .25s;
+      &:hover{
+        background-color: ObjRet($colors,bg-secondary);
+        color: ObjRet($colors,fb-bg);
+        border:2px solid ObjRet($colors,fb-bg);
+      }
+    }
+    a {
+      margin-right: PxToRem(24);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.footer_bar{
+    p{
+        @include defStyle(secondary-font,16,400,para-primary-color);
+    }
+}

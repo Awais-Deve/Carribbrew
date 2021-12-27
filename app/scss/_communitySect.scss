@@ -1,0 +1,128 @@
+.community_section {
+  background: url("../images/community_bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: PxToRem(880);
+  background-size: cover;
+  // MEDIA QUERIES
+  @media (max-width: 1470px) {
+    height: PxToRem(700);
+  }
+  @media (max-width: 1200px) {
+    align-items: center !important;
+    height: PxToRem(600);
+  }
+  @media(max-width:991px){
+    margin:30px 0;
+  }
+  .card {
+    background-color: unset;
+    border: none;
+    max-width: 85vw;
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+    img {
+      width: PxToRem(740);
+      @media (max-width: 991px) {
+        width: PxToRem(437);
+        height: PxToRem(315);
+        margin-bottom: PxToRem(-28);
+      }
+      @media (max-width: 460px) {
+        width: PxToRem(315);
+        height: PxToRem(250);
+        margin-bottom: PxToRem(-23);
+      }
+    }
+    .card-body {
+      background-color: white;
+      box-shadow: 10px 10px 74px rgba(0, 0, 0, 0.7);
+      @media (max-width: 991px) {
+        width: PxToRem(375);
+      }
+      @media (max-width: 460px) {
+        width: PxToRem(270);
+        padding: PxToRem(15) !important;
+      }
+      h1 {
+        @include defStyle(secondary-font, 70, 300, heading-secondary-color);
+        letter-spacing: PxToRem(-6);
+        // MEDIA QUERIES
+        @media (max-width: 1470px) {
+          font-size: PxToRem(55);
+          letter-spacing: PxToRem(-4);
+        }
+        @media (max-width: 1200px) {
+          font-size: PxToRem(40);
+          letter-spacing: PxToRem(-2);
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 24, 400, para-secondary-color);
+        line-height: PxToRem(30.05);
+        // MEDIA QUERIES
+        @media (max-width: 1200px) {
+          font-size: PxToRem(18);
+          line-height: PxToRem(24);
+        }
+        @media (max-width: 991px) {
+          font-size: PxToRem(16);
+        }
+      }
+      a{
+        &:first-child button{
+          @include btnStyle(
+          secondary-font,
+          16,
+          500,
+          heading-secondary-color,
+          bg-secondary,
+          160,
+          48,
+          4
+        );
+        border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, heading-primary-color);
+          color: ObjRet($colors, bg-secondary);
+        }
+        }
+        &:last-child button{
+          @include btnStyle(
+            secondary-font,
+            16,
+            500,
+            bg-secondary,
+            heading-secondary-color,
+            160,
+            48,
+            4
+          );
+          border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+          transition: background-color 0.25s;
+          &:hover {
+            background-color: ObjRet($colors, bg-secondary);
+            color: ObjRet($colors, heading-primary-color);
+          }
+        }
+        // MEDIA QUERIES
+        &:first-child button,
+        &:last-child button{
+          @media (max-width: 1199px) {
+            width: PxToRem(130);
+            height: PxToRem(35);
+            font-size: PxToRem(12);
+          }
+          @media (max-width: 767px) {
+            width: PxToRem(100);
+            height: PxToRem(35);
+            font-size: PxToRem(10);
+          }
+        }
+        
+      }
+    }
+  }
+}

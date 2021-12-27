@@ -1,0 +1,45 @@
+.chat_section {
+  box-sizing: border-box;
+  padding: 85px 0px;
+  margin-top: 90px;
+  margin-bottom: 120px;
+  background-color: ObjRet($colors, heading-secondary-color);
+  @media (max-width: 991px) {
+    margin: 55px 0px;
+  }
+  @media (max-width: 767px) {
+    margin: 30px 0px;
+    padding: 50px 0px;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 56, 300, bg-secondary);
+      letter-spacing: -4px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        36,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        655,
+        76,
+        4
+      );
+      border: none;
+      &:hover {
+        border: 1px solid ObjRet($colors, heading-primary-color);
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+        width: 300px;
+        height: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.product_customer_review {
+  .container{
+    @media(min-width:1400px){
+      max-width: 1320px !important;
+    }
+  }
+  padding-top: 80px;
+  padding-bottom: 280px;
+  background: url('../images/product_customer_review_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: bottom center;
+  @media (max-width: 991px) {
+    padding: 30px 0px;
+  }
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 1120px;
+    }
+  }
+}

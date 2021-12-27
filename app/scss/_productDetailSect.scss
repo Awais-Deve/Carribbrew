@@ -1,0 +1,167 @@
+.product_detail_section {
+  padding-bottom: 230px;
+  padding-top: 120px;
+  background: url("../images/product_detail_bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  @media (max-width: 991px) {
+    padding: PxToRem(55) 0;
+  }
+  @media (max-width: 767px) {
+    padding: PxToRem(30) 0;
+  }
+  .product_detail {
+    margin-bottom: PxToRem(120);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1200px) {
+      margin-bottom: PxToRem(60);
+    }
+    @media (max-width: 991px) {
+      margin-bottom: PxToRem(30);
+    }
+    .main_text {
+      h1 {
+        @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+        letter-spacing: PxToRem(-7);
+        line-height: PxToRem(80);
+        @media (max-width: 1199px) {
+          font-size: PxToRem(60);
+          letter-spacing: PxToRem(-3);
+          line-height: PxToRem(65);
+        }
+        @media (max-width: 767px) {
+          font-size: PxToRem(40);
+          line-height: PxToRem(40);
+          letter-spacing: -2px;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 24, 400, para-primary-color);
+        line-height: PxToRem(30.05);
+        @media (max-width: 767px) {
+          font-size: PxToRem(18);
+          line-height: PxToRem(24);
+        }
+      }
+      .logo_box {
+        img {
+          width: PxToRem(105);
+          height: PxToRem(105);
+          margin-right: PxToRem(32);
+          &:last-child {
+            margin-right: 0;
+          }
+          @media (max-width: 991px) {
+            width: PxToRem(70);
+            height: PxToRem(70);
+            margin-right: PxToRem(24);
+          }
+          @media (max-width: 425px) {
+            width: PxToRem(50);
+            height: PxToRem(50);
+            margin-right: PxToRem(16);
+          }
+        }
+      }
+      .sale_box {
+        .original_price {
+          @include defStyle(secondary-font, 20, 500, sale-color);
+          text-decoration: line-through;
+          @media (max-width: 767px) {
+            font-size: 18px;
+          }
+        }
+        .sale_price {
+          @include defStyle(secondary-font, 38, 500, heading-secondary-color);
+          font-style: italic;
+          @media (max-width: 767px) {
+            font-size: 24px;
+          }
+        }
+      }
+      button {
+        @include btnStyle(
+          secondary-font,
+          25,
+          700,
+          heading-secondary-color,
+          btn-primary-color,
+          415,
+          85,
+          4
+        );
+        border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+        text-transform: uppercase;
+        box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, heading-secondary-color);
+          color: ObjRet($colors, btn-primary-color);
+          border-color: ObjRet($colors, heading-secondary-color);
+        }
+        @media (max-width: 991px) {
+          width: PxToRem(280);
+          height: PxToRem(60);
+          margin-right: PxToRem(24);
+          font-size: PxToRem(12);
+        }
+        @media (max-width: 767px) {
+          font-size: PxToRem(10);
+          width: PxToRem(182);
+          height: PxToRem(48);
+        }
+      }
+    }
+    .product_img {
+      img {
+        width: 100%;
+        @media (max-width: 991px) {
+          width: 60%;
+        }
+      }
+    }
+    &:last-child {
+      .main_text {
+        button {
+          font-size: PxToRem(12);
+          font-weight: 700;
+          width: PxToRem(590);
+          height: PxToRem(48);
+          @media (max-width: 1210px) {
+            width: 100%;
+          }
+          @media (max-width: 991px) {
+            width: PxToRem(590);
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+            font-size: 10px;
+          }
+        }
+      }
+      .product_img {
+        .prdocut_gallery {
+          overflow: scroll;
+          overflow: hidden;
+          .image {
+            margin-right: 48px;
+          }
+          img {
+            width: PxToRem(85);
+            // height: PxToRem(85);
+          }
+        }
+        #image_for_slide {
+          img {
+            @media(max-width:767px){
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

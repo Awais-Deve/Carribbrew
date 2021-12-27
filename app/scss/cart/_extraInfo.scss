@@ -1,0 +1,158 @@
+.extra_info_section {
+  padding-bottom: 28px;
+  @media (max-width: 991px) {
+    padding: 55px 0px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0px;
+  }
+  .row {
+    @media (max-width: 991px) {
+      row-gap: 20px;
+    }
+    @media (max-width: 767px) {
+      row-gap: 16px;
+    }
+  }
+  .box {
+    .box_inner {
+      border: 1px solid rgba(86, 86, 86, 0.5);
+      padding: 40px 39px !important;
+      h1 {
+        @include defStyle(secondary-font, 32, 400, para-primary-color);
+        line-height: 32px;
+        @media (max-width: 1199px) {
+          font-size: 24px;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        line-height: 21px;
+        @media (max-width: 1199px) {
+          font-size: 16px;
+        }
+      }
+      label {
+        @include defStyle(secondary-font, 20, 700, para-secondary-color);
+        line-height: 19px;
+        sup {
+          top: 0px;
+        }
+      }
+      select {
+        @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        width: 100%;
+        line-height: 17px;
+        border: 1px solid transparent;
+        box-shadow: none;
+        &:focus {
+          outline: none;
+          border-color: ObjRet($colors, heading-primary-color);
+        }
+      }
+      a {
+        width: 100%;
+        button {
+          @include btnStyle(
+            secondary-font,
+            10,
+            500,
+            heading-secondary-color,
+            btn-primary-color,
+            338,
+            48,
+            4
+          );
+          border: 1px solid ObjRet($colors, heading-primary-color);
+          transition: background-color 0.25s;
+          text-transform: uppercase;
+          width: 100%;
+          &:hover {
+            background-color: ObjRet($colors, heading-secondary-color);
+            color: ObjRet($colors, btn-primary-color);
+          }
+        }
+      }
+    }
+     .box_2 {
+      height:100%;
+      textarea {
+        @include defStyle(secondary-font, 18, 400, para-fourth-color);
+        line-height: 17.23px;
+        width: 100%;
+        height: 90%;
+        border: none;
+        &:focus {
+          outline-color: ObjRet($colors, heading-primary-color);
+        }
+      }
+      @media (max-width: 767px) {
+        height: 415px;
+      }
+    }
+    .box_3 {
+      height:100%;
+      input[type="number"] {
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          heading-secondary-color,
+          btn-primary-color,
+          246,
+          48,
+          4
+        );
+        border: 1px solid ObjRet($colors, heading-primary-color);
+        text-transform: uppercase;
+        outline: none;
+        &::placeholder {
+          color: ObjRet($colors, heading-secondary-color);
+        }
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        /* Firefox */
+        -moz-appearance: textfield;
+        @media (max-width: 1399px) {
+          width: 70%;
+        }
+      }
+      input[type="submit"] {
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          84,
+          48,
+          4
+        );
+        width: 25%;
+        border: none;
+        transition: background-color 0.25s;
+        text-transform: uppercase;
+        &:hover {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+          border: 1px solid ObjRet($colors, heading-primary-color);
+        }
+        @media (max-width: 1399px) {
+          width: 28%;
+        }
+      }
+      button {
+        background-color: ObjRet($colors, heading-primary-color);
+        color: ObjRet($colors, btn-primary-color);
+        &:hover {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+        }
+      }
+    }
+  }
+}

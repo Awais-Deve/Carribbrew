@@ -1,0 +1,109 @@
+.shop_product_banner_2 {
+  background-color: ObjRet($colors, heading-secondary-color);
+  width: 800px;
+  padding: 50px 55px;
+  margin-bottom: 395px;
+  border-radius: 22px;
+  @media(max-width:1199px){
+    width: 100%;
+  }
+  @media(max-width:991px){
+    margin:55px 0;
+  }
+  @media(max-width:767px){
+    padding:25px;
+    margin:30px 0;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 73.82, 700, bg-primary);
+      &:last-child {
+        font-weight: 300;
+      }
+      @media (max-width: 1399px) {
+        font-size: 60px;
+      }
+      @media(max-width:991px){
+        font-size: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 400, bg-primary);
+      line-height: 20px;
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        12,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        180,
+        48,
+        4
+      );
+      text-transform: uppercase;
+      border: none;
+      &:hover {
+        border: 1px solid ObjRet($colors, heading-primary-color);
+      }
+      @media(max-width:767px){
+        font-size: 10px;
+      }
+    }
+  }
+  .product_images {
+    .imgs {
+      position: relative;
+      @media(max-width:991px){
+        width: 330px;
+        height: 262px;
+      }
+      img {
+        position: absolute;
+        &:first-child {
+          width: 300px;
+          z-index: 2;
+          top: -113px;
+          left: -35px;
+          @media (max-width: 1399px) {
+            left: -73px;
+          }
+          @media(max-width:1199px){
+              top:0;
+              left:0;
+              width: 238px;
+          }
+          @media(max-width:991px){
+            left:-37px;
+          }
+          @media(max-width: 767px){
+            left: -2px;
+          }
+        }
+        &:last-child {
+          width: 188px;
+          z-index: 1;
+          top: -148px;
+          left: 151px;
+          @media (max-width: 1399px) {
+            top: -161px;
+            left: 113px;
+          }
+          @media(max-width:1199px){
+            top:7px;
+            left:unset;
+            right: 26px;
+            width: 126px;
+          }
+          @media(max-width:991px){
+            right: 85px;
+          }
+          @media(max-width:767px){
+            right: 49px;
+          }
+        }
+      }
+    }
+  }
+}

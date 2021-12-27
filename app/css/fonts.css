@@ -1,0 +1,56 @@
+/* SOURCE SANS PROS */
+@font-face {
+    font-family: 'source sans pro';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Light.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'source sans pro';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Bold.otf');
+    font-style:normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'source sans pro';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Black.otf');
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'source sans pro';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+/* GOTHAM */
+@font-face{
+    font-family: 'gotham';
+    src: url('../fonts/gotham/Gotham-Light.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'gotham';
+    src: url('../fonts/gotham/Gotham-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'gotham';
+    src: url('../fonts/gotham/Gotham-Medium.otf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'gotham';
+    src: url('../fonts/gotham/Gotham-Bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'gotham';
+    src: url('../fonts/gotham/Gotham-Black.otf');
+    font-style: normal;
+    font-weight: 900;
+}

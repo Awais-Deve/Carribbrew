@@ -1,0 +1,35 @@
+.about_newsletter{
+    padding: 0px 0px !important;
+    margin-bottom: 80px;
+    @media(max-width:991px){
+        margin-top: 55px;
+        margin-bottom: 85px;
+    }
+    @media(max-width:767px){
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .main_text{
+        padding: 120px 0 !important;
+        @media(max-width:991px){
+            padding:100px 0 !important;
+        }
+        @media(max-width:767px){
+            padding: 30px 30px !important;
+        }
+        background-color: ObjRet($colors,heading-secondary-color);
+    }
+    h1{
+        color:ObjRet($colors,bg-secondary) !important;
+    }
+    p{
+        color:ObjRet($colors,bg-secondary) !important;
+    }
+    input[type='submit']{
+        background-color: ObjRet($colors,btn-primary-color) !important;
+        color:ObjRet($colors,heading-secondary-color) !important;
+        &:hover{
+            border: 1px solid ObjRet($colors,heading-primary-color);
+        }
+    }
+}

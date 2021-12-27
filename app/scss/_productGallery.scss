@@ -1,0 +1,31 @@
+.product_gallery_section {
+  padding-bottom: 140px;
+  @media (max-width: 991px) {
+    padding: PxToRem(55) 0;
+  }
+  @media (max-width: 767px) {
+    padding: PxToRem(30) 0;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 70, 300, heading-secondary-color);
+      letter-spacing: PxToRem(-8);
+      @media (max-width: 767px) {
+        font-size: PxToRem(40);
+        letter-spacing: PxToRem(-2);
+      }
+    }
+  }
+  .product_gallery {
+    row-gap: PxToRem(16);
+    img {
+      width: 100%;
+      @media(max-width:575px){
+          width: PxToRem(300);
+      }
+      @media(max-width: 375px){
+        width: 100%;
+      }
+    }
+  }
+}

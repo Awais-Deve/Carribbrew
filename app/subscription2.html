@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- HEDER-BAR START -->
+      <div class="header_bar py-3 px-0">
+        <div class="">
+          <div class="text-center">
+            <p class="main-text align-items-center">
+              <span class="discount_head d-inline-block me-1 mb-lg-0 mb-2"
+                >Free Shipping on orders $75+
+              </span>
+              <span class="discount_detail"
+                >$5 Flat rate Shipping on orders $50+ (Buy 1 Get 1 at 10% off
+                for 24hrs when you use Code: WOMENPWR10)</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- HEDER-BAR END -->
+      <!-- NAVBAR START -->
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo.png" alt="caribbrew" />
+          </a>
+          <div class="nav_search_box d-lg-none d-block align-items-center">
+            <div class="nav_icons">
+              <a href="#" class="me-3"><img src="images/user.png" /></a>
+              <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            F
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Shop Now</a
+                >
+              </li>
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Sales Location</a>
+              </li>
+            </ul>
+            <div
+              class="
+                nav_search_box
+                d-flex
+                justify-content-lg-start justify-content-center
+              "
+            >
+              <div
+                class="
+                  nav_icons
+                  me-3
+                  d-lg-flex d-none
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <input type="text" class="px-1" id="search_inp" />
+                <a class="me-3" id="search_btn" onclick="search_toggle()"
+                  ><img src="images/search.png"
+                /></a>
+                <a href="#" class="me-3"><img src="images/user.png" /></a>
+                <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+              </div>
+              <a href="#"
+                ><button class="" type="submit">Subscription</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+    </header>
+    <!--  BANNER START -->
+    <section
+      class="
+        home_slider_section
+        d-flex
+        align-items-center
+        overflow-hidden
+        subscription_banner
+      "
+    >
+      <div class="d-flex align-items-center slider_wrapper">
+        <div class="container">
+          <div class="row">
+            <div
+              class="left col-xxl-6 col-lg-7 col-12 text-md-start text-center"
+            >
+              <div class="main_text">
+                <h1 class="d-inline-block mb-3">
+                  Welcome <br />to Subscription
+                </h1>
+                <h3 class="mb-4">
+                  Ongoing subscription: 10% off any item on the purchase
+                </h3>
+                <div class="btns">
+                  <a href="#"><button>Subscribe</button></a>
+                  <a href="#"><button>Send a gift</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  BANNER END -->
+    <!-- INFO START -->
+    <section class="subscription_info">
+      <div class="container">
+        <div class="row">
+          <div class="main_text col-12 text-center">
+            <h1 class="mb-md-4 mb-3">VIP Subscription</h1>
+            <p class="mb-md-4 mb-3">
+              Rapidiously monetize multifunctional users and strategic
+              alignments.
+            </p>
+            <h2 class="mb-3 p-3">
+              Earned 200 beans pt for signing up and 100 bean pts for each month
+            </h2>
+            <span>Can cancel for unused month</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INFO END -->
+    <!-- SELECT PLAN SECTION START -->
+    <section class="subscription_plan_section subscription_products">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="header col-12 text-center">
+            <div
+              class="
+                ring
+                d-flex
+                justify-content-center
+                align-items-center
+                mx-auto
+                mb-4
+              "
+            >
+              <p>2</p>
+            </div>
+            <h1 class="pt-2">Select Plan</h1>
+          </div>
+          <div
+            class="
+              plans
+              col-12
+              row
+              justify-content-lg-start justify-content-center
+            "
+          >
+            <div class="boxes box_1 col-4 text-md-start text-center">
+              <p>1 b</p>
+              <div
+                class="
+                  price
+                  d-flex
+                  align-items-end
+                  mb-3
+                  justify-content-md-start justify-content-center
+                "
+              >
+                <h1>$0.88</h1>
+                <span>cents</span>
+              </div>
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  align-items-md-start align-items-center
+                "
+              >
+                <ul class="pb-4 text-md-start text-center">
+                  <li>Progressively</li>
+                  <li>aggregate adaptive</li>
+                  <li>niche markets</li>
+                  <li>through resource</li>
+                  <li>maximizing portals.</li>
+                  <li>Dynamically</li>
+                </ul>
+              </div>
+              <a href="#"><button>Select</button></a>
+            </div>
+            <div class="boxes box_2 col-4 text-md-start text-center">
+              <p>2 b</p>
+              <div
+                class="
+                  price
+                  d-flex
+                  align-items-end
+                  mb-3
+                  justify-content-md-start justify-content-center
+                "
+              >
+                <h1>$0.85</h1>
+                <span>cents</span>
+              </div>
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  align-items-md-start align-items-center
+                "
+              >
+                <ul class="pb-4 text-md-start text-center">
+                  <li>Progressively</li>
+                  <li>aggregate adaptive</li>
+                  <li>niche markets</li>
+                  <li>through resource</li>
+                  <li>maximizing portals.</li>
+                  <li>Dynamically</li>
+                </ul>
+              </div>
+              <a href="#"><button>Select</button></a>
+            </div>
+            <div class="boxes box_3 col-4 text-md-start text-center">
+              <p>5 b</p>
+              <div
+                class="
+                  price
+                  d-flex
+                  align-items-end
+                  mb-3
+                  justify-content-md-start justify-content-center
+                "
+              >
+                <h1>$0.65</h1>
+                <span>cents</span>
+              </div>
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  align-items-md-start align-items-center
+                "
+              >
+                <ul class="pb-4 text-md-start text-center">
+                  <li>Progressively</li>
+                  <li>aggregate adaptive</li>
+                  <li>niche markets</li>
+                  <li>through resource</li>
+                  <li>maximizing portals.</li>
+                  <li>Dynamically</li>
+                </ul>
+              </div>
+              <a href="#"><button>Select</button></a>
+            </div>
+          </div>
+          <div class="next-btn col-12 text-center">
+            <a href="#"><button>next</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SELECT PLAN SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="main-footer py-4">
+      <div class="container">
+        <div class="row">
+          <a
+            href="#"
+            class="
+              col-md-3 col-12
+              d-flex
+              justify-content-center
+              align-items-center
+              logo
+            "
+            ><img src="images/logo.png" alt=""
+          /></a>
+          <ul
+            class="col-md-6 col-12 d-flex my-lg-0 my-3 justify-content-center"
+          >
+            <li class="nav-item gx-0">
+              <a href="#" class="nav-link px-lg-3 px-2">Shop Now</a>
+            </li>
+            <li class="nav-item gx-0">
+              <a href="#" class="nav-link px-lg-3 px-2">About us</a>
+            </li>
+            <li class="nav-item gx-0">
+              <a href="#" class="nav-link px-lg-3 px-2">Sales Location</a>
+            </li>
+          </ul>
+          <div
+            class="
+              col-md-3 col-12
+              social_links
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer_bar text-center py-3">
+      <p></p>
+    </div>
+    <!-- FOOTER END -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

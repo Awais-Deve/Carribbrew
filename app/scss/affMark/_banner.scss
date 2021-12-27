@@ -1,0 +1,52 @@
+.affMark_banner_section {
+  .slider_wrapper {
+    background: url("../images/affMark_banner_bg1.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 522px;
+    @media (max-width: 767px) {
+      height: 500px;
+    }
+    .main_text {
+      padding-right: 12px;
+      h1 {
+        @include defStyle(secodary-font, 64, 700, heading-primary-color);
+        line-height: 61px;
+        @media (max-width: 767px) {
+          font-size: 40px;
+          line-height: unset;
+        }
+      }
+      h3 {
+        @include defStyle(secodary-font, 32, 400, para-primary-color);
+        line-height: 49.98px;
+        @media (max-width: 767px) {
+          font-size: 24px !important;
+          line-height: 35px;
+        }
+      }
+      button{
+        @include btnStyle(
+          secondary-font,
+          10,
+          500,
+          btn-primary-color,
+          heading-primary-color,
+          124,
+          48,
+          4
+        );
+        text-transform: uppercase;
+        border: none;
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, btn-primary-color);
+          color: ObjRet($colors, heading-secondary-color);
+          border: 1px solid ObjRet($colors, heading-primary-color);
+        }
+      }
+    }
+  }
+}
+

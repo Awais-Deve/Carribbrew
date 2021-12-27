@@ -1,0 +1,96 @@
+.faq_info {
+  padding-bottom: 180px;
+  @media (max-width: 991px) {
+    padding: 30px 0px;
+  }
+  .main_text {
+    width: 848px;
+  }
+  .faq_accordion .accordion_box.active .acc_container{
+    display: none;
+  }
+  .faq_accordion{
+    p,
+    a {
+      @include defStyle(secondary-font, 16, 400, para-primary-color);
+      line-height: 27.5px;
+      text-decoration: none;
+    }
+  }
+  .accordion_box {
+    @include defStyle(secondary-font, 24, 500, heading-fourth-color);
+    border-bottom: 1px solid ObjRet($colors, inp-brdr);
+    @media (max-width: 767px) {
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 20px;
+    }
+    cursor: pointer;
+    span {
+      z-index: -1;
+    }
+  }
+  .inner_accordion {
+    .accordion_box_inner.active .acc_container_inner{
+      display: none;
+    }
+    
+    padding: 30px 0 25px 25px;
+    @media(max-width: 767px){
+      padding:16px 0;
+    }
+    span {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border: none;
+      border-radius: 50%;
+      background-color: ObjRet($colors, bg-sixth);
+      margin-right: 16px;
+    }
+    .acc_trigger_inner {
+      @include defStyle(secondary-font, 18, 400, para-primary-color);
+      color: rgba(0, 0, 0, 0.6);
+      line-height: 24px;
+      border-bottom: none;
+      padding-bottom: 15px;
+    }
+    .acc_container_inner {
+      position: relative;
+
+      padding: 0 94px 20px 25px;
+      @media (max-width: 767px) {
+        padding-right: 0;
+        padding-left: 37px;
+      }
+      p,
+      a {
+        @include defStyle(secondary-font, 16, 400, para-primary-color);
+        line-height: 27.5px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: ObjRet($colors, heading-secondary-color);
+      }
+      &::before {
+        content: " ";
+        width: 1px;
+        height: 100%;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          180deg,
+          #666666 0%,
+          rgba(102, 102, 102, 0) 100%
+        );
+        position: absolute;
+
+        top: -31px;
+        left: 3.45px;
+        @media (max-width: 767px) {
+          border: none;
+        }
+      }
+    }
+  }
+}

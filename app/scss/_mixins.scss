@@ -1,0 +1,21 @@
+@mixin defStyle($family,$size,$weight,$color) {
+    font-family: ObjRet($fonts,$family);
+    font-size: PxToRem($size);
+    font-weight: $weight;
+    color: ObjRet($colors,$color);
+};
+
+@mixin btnStyle($family,$fontSize,$weight,$color,$bgColor,$width,$height,$radius) {
+    font-family: ObjRet($fonts,$family);
+    font-size: PxToRem($fontSize);
+    font-weight: $weight;
+    color:ObjRet($colors,$color);
+    background-color: ObjRet($colors,$bgColor);
+    width:PxToRem($width);
+    height: PxToRem($height);
+    @if $radius == none{
+        border-radius: $radius;
+    } @else{
+        border-radius: PxToRem($radius);
+    }
+} 

@@ -1,0 +1,101 @@
+.home_slider_section {
+  z-index: 5;
+  .slider_wrapper {
+    width: 100%;
+    height: PxToRem(700);
+    background: url('../images/home_slider_bg1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 991px) {
+      height: PxToRem(600);
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        opacity: 0.3;
+        z-index: -1;
+      }
+    }
+    @media (max-width: 991px) {
+      height: PxToRem(500);
+    }
+  }
+
+  .left {
+    z-index: 2;
+    .main_text {
+      @media(max-width:1580px){
+        padding-right: PxToRem(100);
+      }
+      @media(max-width:1300px){
+        padding-right: 0;
+      }
+      h1 {
+        @include defStyle(secondary-font, 100, 700, heading-primary-color);
+        @media (max-width: 991px) {
+          text-shadow: 2px 2px white;
+        }
+        @media (max-width: 768px) {
+          font-size: PxToRem(70);
+        }
+      }
+      span {
+        @include defStyle(secondary-font, 40, 300, heading-primary-color);
+        font-style: italic;
+        @media (max-width: 991px) {
+          text-shadow: 1px 1px white;
+        }
+        @media (max-width: 768px) {
+          font-size: PxToRem(30);
+        }
+      }
+      h3 {
+        @include defStyle(secondary-font, 48, 300, para-secondary-color);
+        @media (max-width: 991px) {
+          color: white !important;
+          text-shadow: 2px 2px ObjRet($colors, para-secondary-color);
+        }
+        @media (max-width: 768px) {
+          font-size: PxToRem(30) !important;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 16, 300, para-primary-color);
+        line-height: PxToRem(25);
+        @media (max-width: 991px) {
+          color: white;
+          text-shadow: 2px 2px ObjRet($colors, para-secondary-color);
+          font-weight: 400;
+        }
+      }
+      button {
+        @include btnStyle(
+          secondary-font,
+          12,
+          500,
+          heading-primary-color,
+          bg-secondary,
+          115,
+          40,
+          4
+        );
+        border: 1px solid ObjRet($colors, heading-primary-color);
+        box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+        &:hover {
+          border: none;
+          background-color: ObjRet($colors, heading-primary-color);
+          color: ObjRet($colors, btn-primary-color);
+        }
+      }
+    }
+  }
+}

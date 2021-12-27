@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- HEDER-BAR START -->
+      <div class="header_bar py-3 px-0">
+        <div class="">
+          <div class="text-center">
+            <p class="main-text align-items-center">
+              <span class="discount_head d-inline-block me-1 mb-lg-0 mb-2"
+                >Free Shipping on orders $75+
+              </span>
+              <span class="discount_detail"
+                >$5 Flat rate Shipping on orders $50+ (Buy 1 Get 1 at 10% off
+                for 24hrs when you use Code: WOMENPWR10)</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- HEDER-BAR END -->
+      <!-- NAVBAR START -->
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo.png" alt="caribbrew" />
+          </a>
+          <div class="nav_search_box d-lg-none d-block align-items-center">
+            <div class="nav_icons">
+              <a href="#" class="me-3"><img src="images/user.png" /></a>
+              <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            F
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 pt-lg-0 pt-3">
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Shop Now</a
+                >
+              </li>
+              <li class="nav-item me-lg-3 me-0 text-center">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Sales Location</a>
+              </li>
+            </ul>
+            <div
+              class="
+                nav_search_box
+                d-flex
+                justify-content-lg-start justify-content-center
+              "
+            >
+              <div
+                class="
+                  nav_icons
+                  me-3
+                  d-lg-flex d-none
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <input type="text" class="px-1" id="search_inp" />
+                <a class="me-3" id="search_btn" onclick="search_toggle()"
+                  ><img src="images/search.png"
+                /></a>
+                <a href="#" class="me-3"><img src="images/user.png" /></a>
+                <a href="#" class=""><img src="images/shopping-cart .png" /></a>
+              </div>
+              <a href="#"
+                ><button class="" type="submit">Subscription</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+    </header>
+    <!-- PAGE TITLE START  -->
+    <section class="page_title_section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="
+              left
+              col-lg-6 col-md-8 col-12
+              mb-md-0 mb-4
+              text-md-start text-center
+            "
+          >
+            <h1>Shopping Cart</h1>
+          </div>
+          <div class="right col-lg-6 col-md-4 col-12 text-md-end text-center">
+            <a href="#"><button>Proceed to checkout</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE TITLE END  -->
+    <!-- ITEM LIST START -->
+    <section class="item_lists_section">
+      <div class="container">
+        <div class="row justify-content-center mx-md-0 mx-2">
+          <div
+            class="
+              px-0
+              item_list
+              col-12
+              row
+              align-items-center
+              flex-md-row flex-column
+              text-md-start text-center
+            "
+          >
+            <div class="image px-0 col-md-1 col-12">
+              <img src="images/cart_item_img1.png" alt="" />
+            </div>
+            <div class="text ps-md-4 ps-0 col-md-5 col-12">
+              <h3 class="mb-2">Caribbean Spiced Coffee</h3>
+              <a href="#"><h4>change variants</h4></a>
+            </div>
+            <p class="price col-md-2 col-12 text-center">$16.00</p>
+            <div class="col-md-2 col-12 text-center">
+              <div
+                class="
+                  product_count
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  mb-md-0 mb-2
+                "
+              >
+                <button>-</button>
+                <span class="mx-3">02</span>
+                <button>+</button>
+              </div>
+            </div>
+            <div
+              class="
+                col-md-2 col-12
+                row
+                align-items-center
+                justify-content-end
+                px-0
+              "
+            >
+              <p
+                class="
+                  total_price
+                  col-md-10 col-12
+                  text-md-end text-center
+                  px-0
+                "
+              >
+                $32.00
+              </p>
+              <div class="col-md-2 col-12 ps-md-2
+              ps-0 px-0">
+              <a
+                href="#"
+                class="
+                  remove_item
+                  text-md-end text-center
+                "
+                ><img src="images/trash.png" alt=""
+              /></a>
+            </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              px-0
+              item_list
+              col-12
+              row
+              align-items-center
+              flex-md-row flex-column
+              text-md-start text-center
+            "
+          >
+            <div class="image px-0 col-md-1 col-12">
+              <img src="images/cart_item_img2.png" alt="" />
+            </div>
+            <div class="text ps-md-4 ps-0 col-md-5 col-12">
+              <h3 class="mb-2">Medium Roast - Haitian Coffee -12 oz</h3>
+              <a href="#"><h4>change variants</h4></a>
+            </div>
+            <p class="price col-md-2 col-12 text-center">$20.00</p>
+            <div class="col-md-2 col-12 text-center">
+              <div
+                class="
+                  product_count
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  mb-md-0 mb-2
+                "
+              >
+                <button>-</button>
+                <span class="mx-3">02</span>
+                <button>+</button>
+              </div>
+            </div>
+            <div
+              class="
+                col-md-2 col-12
+                row
+                align-items-center
+                justify-content-end
+                px-0
+              "
+            >
+              <p
+                class="
+                  total_price
+                  col-md-10 col-12
+                  text-md-end text-center
+                  px-0
+                "
+              >
+                $40.00
+              </p>
+              <div class="col-md-2 col-12 ps-md-2
+              ps-0 px-0">
+              <a
+                href="#"
+                class="
+                  remove_item
+                  text-md-end text-center
+                "
+                ><img src="images/trash.png" alt=""
+              /></a>
+            </div>
+            </div>
+          </div>
+          <div class="links col-12 row px-md-0 px-2 ">
+            <div
+              class="
+                left
+                col-md-6 col-12
+                text-md-start text-center
+                mb-md-0 mb-3
+                px-0
+              "
+            >
+              <a href="">Continue Shopping</a>
+            </div>
+            <div class="right col-md-6 col-12 px-0 ">
+              <a
+                href=""
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-md-end justify-content-center
+                "
+                ><img src="images/trash.png" alt="" class="pe-md-3 pe-2" /><span
+                  >Clear Shopping Cart</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ITEM LIST END -->
+    <!-- EXTRA INFO BOXES START -->
+    <section class="extra_info_section">
+      <div class="container">
+        <div class="row text-md-start text-center">
+          <!-- <div class="box col-lg-4 col-md-6 col-12">
+            <div class="box_inner p-5 ">
+              <h1 class="mb-3">Estimate Shipping And Tax</h1>
+              <p class="mb-3">Enter your destination to get a shipping estimate</p>
+              <label class="d-block mt-2 mb-3">Country<sup>*</sup></label>
+                <select name="" class=" mt-1 p-1">
+                  <option value="USA">USA</option>
+                  <option value="USA">USA</option>
+                  <option value="USA">USA</option>
+                </select>
+              <label class="d-block mt-3 mb-3">State/province<sup>*</sup></label>
+              <select name="" class="mt-1 p-1">
+                <option value="Albama">Albama</option>
+                <option value="Albama">Albama</option>
+                <option value="Albama">Albama</option>
+              </select>
+              <label class="d-block mt-3 mb-3">Zip/postal Code</label>
+              <select name="" class="mt-1 mb-4 p-1">
+                <option value="0028">0028</option>
+                <option value="0028">0028</option>
+                <option value="0028">0028</option>
+              </select>
+              <a href="" class=""><button>Calculate shipping</button></a>
+            </div>
+          </div> -->
+          <div class="box col-lg-4 col-md-6 col-12">
+            <div class="box_inner p-5 box_2">
+              <h1 class="mb-2">Note</h1>
+              <textarea class='mt-1 p-1' name="" placeholder="Enter your Note"></textarea>
+            </div>
+          </div>
+          <div class="box col-lg-4 col-md-6 col-12">
+            <div class="box_inner d-flex flex-column p-5 box_3">
+              <form action="" class="mb-4">
+                <input class=' px-2' type="number" name="" placeholder="Discount Code">
+                <input type="submit" value="Apply">
+              </form>
+              <div class="text mt-3 mb-5 pb-md-5 pb-0">
+                <div class="mb-4 d-flex justify-content-between"><h1>Subtotal</h1><h1>$90</h1></div>
+                <div class="mb-4 mt-2 d-flex justify-content-between"><h1>Discount</h1><h1>-$8</h1></div>
+                <div class="mt-2 d-flex justify-content-between"><h1>Grand total</h1><h1>$82</h1></div>
+              </div>
+              <a href="" class="mt-auto"><button>Proceed to payment</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EXTRA INFO BOXES END -->
+    <!-- SOLD PRODUCTS START -->
+    <section class="cart_sold_products product_related_section bundle_deal_section">
+      <div class="container">
+        <div class="row">
+          <div class="main_text col-12 mb-xl-0 mb-md-4 mb-0 text-center text-md-start">
+            <h1 class="mb-md-4 mb-0">Customers also bought<br class="d-md-inline-block d-none"> these products </h1>
+          </div>
+          <div class="products_list col-12">
+            <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+              <div
+                class="product_box text-center py-4"
+              >
+                <div class="product_box_inner py-4">
+                  <img class="mb-3 mx-auto" src="./images/product_list_img1.png" alt="" />
+                  <h3 class="title mb-2 px-4">
+                    Medium Roast - Haitian Coffee -12 oz
+                  </h3>
+                  <h2 class="price mb-1">$14.00</h2>
+                  <div class="rating_stars mb-4">
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="rated fas fa-star"></i></a>
+                    <a href="#"><i class="non_rated fas fa-star"></i></a>
+                  </div>
+                  <a href="#" class="first_btn"><button>Buy Now</button></a>
+                  <a href="#" class="second_btn"><button>Add to cart</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="slick_btn text-lg-end text-center">
+              <div class="container">
+                <button class="slick_control_prev me-3 mt-4" id='cart_prev'>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slick_control_next" id='cart_next'>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SOLD PRODUCTS END -->
+    <!-- CHAT SECTION START -->
+    <section class="chat_section d-inline-block w-100">
+      <div class="container">
+        <div class="row">
+          <div class="main_text col-12 text-center">
+            <h1 class="mb-md-5 mb-4">Chat with us if you need help </h1>
+            <a href="#"><button>Chat Now!</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CHAT SECTION END -->
+    <!-- PAY OPTIONS LOGO START -->
+    <section class="pay_option_logo">
+      <div class="container">
+        <div class="row text-center">
+          <div class="main_text col-md-5 col-12 pt-md-0 pt-3">
+            <img src="images/pay_img1.png" alt="">
+          </div>
+          <div class="main_text col-md-5 col-12 pt-md-0 pt-3">
+            <img src="images/pay_img2.png" alt="">
+          </div>
+          <div class="main_text col-md-2 col-12 my-auto pt-md-0 pt-3">
+            <img src="images/pay_img3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAY OPTIONS LOGO END -->
+    <!-- CHAT BUTTON -->
+    <div class="chat_button">
+     <a href="#">
+       <button>
+         <img src="images/chat.png" alt="">
+      </button>
+    </a>
+    </div>
+    <!-- FOOTER START -->
+    <footer class="main-footer py-4">
+      <div class="container">
+        <div class="row">
+            <a href="#" class="col-md-3 col-12 d-flex justify-content-center align-items-center logo"><img src="images/logo.png" alt=""></a>
+            <ul class='col-md-6 col-12  d-flex  my-lg-0 my-3  justify-content-center'>
+              <li class='nav-item gx-0'><a href='#' class='nav-link px-lg-3 px-2'>Shop Now</a></li>
+              <li class='nav-item gx-0'><a href='#' class="nav-link px-lg-3 px-2">About us</a></li>
+              <li class="nav-item gx-0"><a href='#' class="nav-link px-lg-3 px-2">Sales Location</a></li>
+            </ul>
+            <div class="col-md-3 col-12  social_links d-flex justify-content-center align-items-center">
+              <a href='#'><i class="fab fa-youtube"></i></a>
+              <a href='#'><i class="fab fa-instagram"></i></a>
+              <a href='#'><i class="fab fa-twitter-square"></i></a>
+              <a href='#'><i class="fab fa-linkedin-in"></i></a>
+              <a href='#'><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer_bar text-center py-3">
+      <p></p>
+    </div>
+    <!-- FOOTER END -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/BigPicture.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

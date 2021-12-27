@@ -1,0 +1,106 @@
+.whlSale_info {
+  .main_text {
+    padding-left: 50px;
+    @media (max-width: 991px) {
+      padding-left: 12px;
+    }
+    .list {
+      ul {
+        list-style-type: disc;
+        list-style-position: inside;
+        li {
+          @include defStyle(secondary-font, 24, 400, para-primary-color);
+          margin-bottom: 16px;
+          &::marker {
+            color: ObjRet($colors, heading-secondary-color);
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          @media (max-width: 767px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.whlSale_info_two {
+  background: url("../images/whlSale_info2_bg2.png"),
+    url("../images/whlSale_info2_bg1.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, top center;
+  background-size: cover,contain;
+  padding-top: 380px;
+  padding-bottom: 110px;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+  .main_text {
+    button {
+      @media (max-width: 767px) {
+        width: 170px;
+      }
+    }
+  }
+}
+.whlSale_info_banner {
+  margin-bottom: 120px;
+  @media (max-width: 991px) {
+    margin: 55px 0;
+  }
+  @media (max-width: 767px) {
+    margin: 30px 0;
+  }
+  .main_text {
+    background-color: ObjRet($colors, icon-color);
+    padding: 114px 88px;
+    @media (max-width: 767px) {
+      padding: 40px;
+    }
+    p {
+      @include defStyle(secondary-font, 40, 400, bg-secondary);
+      line-height: 50px;
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.whlSale_logos {
+  padding-top: 0;
+  padding-bottom: 160px;
+  @media (max-width: 991px) {
+    padding: 55px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+}
+#whlSale_logos {
+  div {
+    @media(max-width: 1800px){
+      margin-right: 108px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 50px;
+    }
+    @media (max-width: 475px) {
+      margin-right: 20px;
+    }
+  }
+}
+.whlSale_newsletter{
+  margin-top: 0;
+  @media(max-width: 991px){
+    margin-top: 30px;
+    margin-bottom: 85px;
+  }
+  @media(max-width: 767px){
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}

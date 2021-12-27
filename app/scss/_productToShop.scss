@@ -1,0 +1,105 @@
+.product_to_shop {
+  padding-top: 105px;
+  padding-bottom: 195px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding: PxToRem(30) 0;
+  }
+
+  .images {
+    position: relative;
+    padding-left: PxToRem(140);
+    @media (max-width: 1399px) {
+      padding-left: PxToRem(37);
+    }
+    @media (max-width: 767px) {
+      width: 355px;
+    }
+    @media (max-width: 500px) {
+      width: 300px;
+    }
+    img {
+      &:first-child {
+        width: PxToRem(416);
+        box-shadow: PxToRem(-37) PxToRem(37)
+          ObjRet($colors, heading-secondary-color);
+        border-radius: PxToRem(42);
+        @media (max-width: 767px) {
+          width: PxToRem(250);
+          box-shadow: PxToRem(-20) PxToRem(20)
+            ObjRet($colors, heading-secondary-color);
+        }
+      }
+      &:last-child {
+        width: PxToRem(700);
+        position: absolute;
+        left: PxToRem(211);
+        // box-shadow: 20px 14px 33px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        // MEDIA QUERIES
+        @media (max-width: 1399px) {
+          left: 14%;
+        }
+        @media (max-width: 767px) {
+          width: PxToRem(386);
+          bottom: -98px;
+          left: 62px;
+        }
+        @media (max-width: 500px) {
+          width: PxToRem(338);
+          left: 66px;
+          top: 18%;
+        }
+      }
+    }
+  }
+  .main_text {
+    z-index: 2;
+    h1 {
+      @include defStyle(secondary-font, 84, 300, heading-secondary-color);
+      line-height: PxToRem(80.39);
+      letter-spacing: PxToRem(-7);
+      //   MEDIA QUERIES
+      @media (max-width: 1199px) {
+        font-size: PxToRem(60);
+        letter-spacing: PxToRem(-3);
+        line-height: PxToRem(65);
+      }
+      @media (max-width: 768px) {
+        font-size: PxToRem(40);
+        line-height: PxToRem(35);
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 400, para-primary-color);
+      line-height: PxToRem(20.03);
+      @media(max-width: 767px){
+        line-height: 24px;
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        12,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        180,
+        48,
+        4
+      );
+      border: PxToRem(1) solid ObjRet($colors, heading-primary-color);
+      box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+      text-transform: uppercase;
+      transition: background-color 0.25s;
+      &:hover {
+        background-color: ObjRet($colors, heading-secondary-color);
+        color: ObjRet($colors, btn-primary-color);
+        border-color: ObjRet($colors, heading-secondary-color);
+      }
+      @media(max-width: 767px){
+        font-size: 10px;
+      }
+    }
+  }
+}

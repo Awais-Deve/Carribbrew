@@ -1,0 +1,98 @@
+.affMark_info_one {
+  padding-top: 300px;
+  padding-bottom: 90px;
+  background: url("../images/affMark_info_bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 120px;
+  @media (max-width: 1399px) {
+    background-size: cover;
+  }
+  @media (max-width: 991px) {
+    padding: 30px 0px;
+    margin: 30px 0px;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 84, 300, bg-secondary);
+      line-height: 80px;
+      letter-spacing: -8px;
+      @media (max-width: 1199px) {
+        font-size: 70px;
+        letter-spacing: -4px;
+        line-height: 70px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+    p {
+      @include defStyle(secondary-font, 16, 400, bg-secondary);
+      line-height: 24px;
+    }
+    h2 {
+      @include defStyle(secondary-font, 40, 700, bg-secondary);
+      letter-spacing: -2px;
+      @media (max-width: 991px) {
+        font-size: 35px;
+        letter-spacing: -1px;
+      }
+    }
+    .lists {
+      column-gap: 90px;
+      padding-left: 25px;
+      @media (max-width: 767px) {
+        column-gap: 30px;
+      }
+      ul {
+        list-style-type: disc;
+        li {
+          @include defStyle(secondary-font, 24, 400, bg-secondary);
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          @media (max-width: 767px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    button {
+      @include btnStyle(
+        secondary-font,
+        12,
+        500,
+        heading-secondary-color,
+        btn-primary-color,
+        182,
+        48,
+        4
+      );
+      border: 1px solid ObjRet($colors, heading-primary-color);
+      text-transform: uppercase;
+      transition: background-color 0.25s;
+      box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+      @media (max-width: 767px) {
+        font-size: 10px;
+      }
+    }
+  }
+  .image {
+    img {
+      width: 515px;
+      @media (max-width: 1399px) {
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        width: 350px;
+      }
+      @media (max-width: 767px) {
+        width: 250px;
+      }
+    }
+  }
+}

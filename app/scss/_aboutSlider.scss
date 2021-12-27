@@ -1,0 +1,64 @@
+.about_banner_section {
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+  .container {
+    @media (min-width: 1400px) {
+      min-width: 1320px;
+    }
+    @media (min-width: 1450px) {
+      max-width: 1440px;
+    }
+  }
+  .slider_wrapper {
+    height: 584px;
+    background: url("../images/about_slide_bg1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 991px) {
+      height: 500px;
+    }
+    .main_text {
+      background: white;
+      h1 {
+        @include defStyle(secondary-font, 64, 700, heading-secondary-color);
+        line-height: 61px;
+        @media (max-width: 767px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 24, 400, para-primary-color);
+        line-height: 30.05px;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      button {
+        @include btnStyle(
+          secondary-font,
+          12,
+          700,
+          heading-secondary-color,
+          btn-primary-color,
+          200,
+          48,
+          4
+        );
+        border: 1px solid ObjRet($colors, heading-primary-color);
+        text-transform: uppercase;
+        box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.25s;
+        &:hover {
+          background-color: ObjRet($colors, heading-secondary-color);
+          color: ObjRet($colors, btn-primary-color);
+        }
+        @media (max-width: 767px) {
+          font-size: 10px;
+          width: 182px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.sub_product_section {
+  padding-bottom: 120px;
+  @media(max-width: 991px){
+    padding:55px 0;
+  }
+  @media(max-width: 767px){
+    padding:30px 0;
+  }
+  h1 {
+    @include defStyle(secondary-font, 64, 300, heading-secondary-color);
+    line-height: 61px;
+    letter-spacing: -4px;
+    @media (max-width: 767px) {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -2px;
+    }
+  }
+  .product_line {
+    column-gap: 30px;
+    row-gap: 30px;
+    h1 {
+      @include defStyle(secondary-font, 64, 700, heading-secondary-color);
+      line-height: 61px;
+      letter-spacing: -4px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -2px;
+      }
+    }
+  }
+  .detail {
+    width: 1118px;
+    margin: auto;
+    @media (max-width: 1199px) {
+      width: unset;
+    }
+  }
+  .main_text {
+    &:first-child {
+      background: ObjRet($colors, heading-secondary-color);
+    }
+    &:nth-child(2) {
+      background: ObjRet($colors, card-bg-primary);
+    }
+    &:nth-child(3) {
+      background: ObjRet($colors, card-bg-secondary);
+    }
+    padding: 40px 0;
+    @media(max-width:767px){
+        padding:40px 0;
+    }
+    p,
+    span {
+      @include defStyle(secondary-font, 24, 400, bg-secondary);
+      letter-spacing: -0.5px;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        letter-spacing: unset;
+      }
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+  button {
+    @include btnStyle(
+      secondary-font,
+      10,
+      500,
+      btn-primary-color,
+      heading-primary-color,
+      124,
+      48,
+      4
+    );
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.25s;
+    &:hover {
+      background-color: ObjRet($colors, btn-primary-color);
+      color: ObjRet($colors, heading-secondary-color);
+      border: 1px solid ObjRet($colors, heading-primary-color);
+    }
+  }
+}

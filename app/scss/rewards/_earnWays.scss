@@ -1,0 +1,83 @@
+.rewards_earnWays {
+  padding: 200px 0px;
+  background: url("../images/rewards_sect2_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 991px) {
+    padding: 30px 0px;
+  }
+  .header {
+    h1 {
+      @include defStyle(secondary-font, 64, 300, heading-secondary-color);
+      letter-spacing: -3px;
+      line-height: 62px;
+      @media (max-width: 767px) {
+        font-size: 40px;
+        letter-spacing: -2px;
+        line-height: 40px;
+      }
+    }
+  }
+  .main_text {
+    .text {
+      width: 298px;
+      height: 298px;
+      border: 2px solid ObjRet($colors, heading-secondary-color);
+      border-radius: 50%;
+      background-color: ObjRet($colors, bg-fifth);
+      @media (max-width: 767px) {
+        width: 230px;
+        height: 230px;
+      }
+      img {
+        @media (max-width: 767px) {
+          width: 40px;
+        }
+      }
+      h2 {
+        @include defStyle(secondary-font, 32, 700, heading-secondary-color);
+        letter-spacing: -3px;
+        @media (max-width: 767px) {
+          font-size: 25px;
+          letter-spacing: unset;
+        }
+      }
+      p {
+        @include defStyle(secondary-font, 20, 500, para-primary-color);
+        line-height: 31px;
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+.rewardsPage_reward {
+  padding-bottom: 190px;
+  padding-top: 0;
+  @media (max-width: 991px) {
+    padding: 55px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+  .main_text {
+    padding-left: 80px;
+    @media (max-width: 1399px) {
+      padding-left: 12px;
+    }
+  }
+}
+.rewards_products {
+  background: url("../images/reward_sect4_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  @media (max-width: 991px) {
+    padding: 30px 0px;
+  }
+}

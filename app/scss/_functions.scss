@@ -1,0 +1,7 @@
+@function PxToRem($size){
+    @return $size/16 * 1rem;
+};
+
+@function ObjRet($object,$key){
+    @return map-get($object,$key);
+};  

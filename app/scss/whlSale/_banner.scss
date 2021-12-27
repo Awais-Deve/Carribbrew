@@ -1,0 +1,23 @@
+.whlSale_banner{
+    height: 584px;
+    background: url('../images/whlSale_banner_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    @media(max-width: 767px){
+        height: 500px;
+    }
+    .main_text{
+        h2{
+            @include defStyle(secondary-font,16,500,bg-secondary);
+        }
+        h1{
+            @include defStyle(secondary-font,64,700,bg-secondary);
+            line-height: 61px;
+            @media(max-width: 767px){
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+}

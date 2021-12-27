@@ -1,0 +1,35 @@
+.overImpact_banner_section {
+    .slider_wrapper{
+        background: url('../images/ourImpact_slider_bg1.png');
+        background-position:top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 585px;
+        @media(max-width:991px){
+            height: 500px;
+        }
+        .main_text{
+            h1{
+                @include defStyle(secondary-font,64,700,bg-secondary);
+                line-height: 61px;
+                @media(max-width:767px){
+                    font-size: 40px;
+                    line-height: 35px;
+                }
+            } 
+            p{
+                @include defStyle(secondary-font,24,400,bg-secondary);
+                line-height: 30.05px;
+                padding-right: 65px;
+                @media(max-width:991px){
+                    padding-right: 0;
+                }
+                @media(max-width:767px){
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

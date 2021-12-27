@@ -1,0 +1,60 @@
+.brands_logo_section {
+  padding: PxToRem(60) 0;
+  overflow: hidden;
+  @media(max-width:991px){
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  @media (max-width: 767px) {
+    padding-top:60px;
+    padding-bottom: 30px;
+  }
+  .main_text {
+    h1 {
+      @include defStyle(secondary-font, 56, 300, heading-secondary-color);
+      letter-spacing: PxToRem(-5);
+      @media (max-width: 767px) {
+        font-size: PxToRem(40);
+        letter-spacing: -2px;
+      }
+    }
+  }
+  .brand_logo {
+    .logo{
+      display:none !important;
+    }
+    .logo.slick-slide{
+      display:flex !important;
+    }
+    .slick-track {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .slick-slide {
+        @media (max-width: 1800px) {
+          width: auto !important;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .slick-dots {
+      li {
+        width: auto;
+        button {
+          width: auto;
+          &::before {
+            font-size: PxToRem(25) !important;
+            @media (max-width: 425px) {
+              font-size: PxToRem(20) !important;
+              width: PxToRem(15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
